@@ -4,13 +4,28 @@
 img {
     width:300px;
     height: 300px;
+}
 
-  }
-  main {
+header {
+    width : 800px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #3377aa;
+    box-shadow: 10px 8px 5px #555;
+}
+
+main {
+    display: grid;
     margin: auto;
-      width: 50%;
-      padding: 10px;
-    }
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+       padding: 10px;
+}
     
 p {
     font-family: 'Mallanna', Georgia, serif;
@@ -19,18 +34,18 @@ p {
     padding: 10px;
     color: #070550;
     margin-top:0;
-  }
-
-  header {
-    align-items: center;
-    background-color:#abe2e5; 
-  }
+}
   
-  footer {
-    background-color:#abe2e5; 
+footer { 
+    width : 800px;
+    display: grid;
+    background-color: #3377aa;
     align-items: center;
     justify-content: center;
     line-height: 2.75em;
     text-align: center;
-  }
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 8px 5px #555;
+}
   
