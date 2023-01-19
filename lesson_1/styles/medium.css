@@ -9,6 +9,10 @@ h1 {
  header, footer {
     border-radius: 10px;
  }
+ .banner {
+   flex-flow: row wrap;
+   
+ }
  img {
     box-shadow: 0 0 30px #555;
     float: right;
