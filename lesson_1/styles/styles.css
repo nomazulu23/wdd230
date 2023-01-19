@@ -1,45 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Laila&family=Mallanna&family=Marck+Script&display=swap');
-
-
-img {
-    width:300px;
-    height: 300px;
-}
-
 header {
+    font-family: 'Playfair Display', serif;
     width : 800px;
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    background-color: #3377aa;
+    background-color: #f6b70a;
     box-shadow: 10px 8px 5px #555;
+    border-radius: 10px;
+}
+
+img {
+    width:200px;
+    height: 300px;
+    box-shadow: 0 0 30px #555;
+    float: right;
+    border-radius: :0 10px 0 0;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif; 
+    font-size: 1.5rem;
+    margin: 0.15rem
+}
+
+ul {
+    font-family: 'Playfair Display', serif;
 }
 
 main {
+    width : 800px;
     display: grid;
     margin: auto;
     margin-left: auto;
     margin-right: auto;
     align-items: center;
     justify-content: center;
-       padding: 10px;
+    padding: 10px;
+    background-color: rgb(215, 213, 213);
+    border-radius: 10px;
 }
     
 p {
-    font-family: 'Mallanna', Georgia, serif;
+    font-family: 'Playfair Display', serif;
     font-size: 1.25em;
     line-height: 1.35em;
     padding: 10px;
     color: #070550;
     margin-top:0;
 }
+
   
 footer { 
+    font-family: 'Playfair Display', serif;
     width : 800px;
     display: grid;
-    background-color: #3377aa;
+    background-color: #f6b70a;
     align-items: center;
     justify-content: center;
     line-height: 2.75em;
@@ -47,5 +64,6 @@ footer {
     margin-left: auto;
     margin-right: auto;
     box-shadow: 10px 8px 5px #555;
+    border-radius: 10px;
 }
   
