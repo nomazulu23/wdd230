@@ -1,4 +1,4 @@
-@media only screen and (mini-width: 74em)
+@media only screen and (min-width: 74em)
 {
     .banner {
         font-size: 3rem;
