@@ -1,6 +1,5 @@
 header {
     font-family: 'Playfair Display', serif;
-    width : 800px;
     display: grid;
     grid-template-columns: auto auto;
     align-items: center;
@@ -12,7 +11,7 @@ header {
 }
 
 img {
-    width:200px;
+    width: 200px;
     height: 300px;
     box-shadow: 0 0 30px #555;
     float: right;
@@ -30,7 +29,7 @@ ul {
 }
 
 main {
-    max-width : 800px;
+    
     display: grid;
     margin: auto;
     margin-left: auto;
@@ -54,7 +53,6 @@ p {
   
 footer { 
     font-family: 'Playfair Display', serif;
-    width : 800px;
     display: grid;
     background-color: #f6b70a;
     align-items: center;
@@ -67,3 +65,6 @@ footer {
     border-radius: 10px;
 }
   
+main, footer, header {
+    max-width : 800px;
+}
