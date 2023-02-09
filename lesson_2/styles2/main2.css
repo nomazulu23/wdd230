@@ -35,6 +35,10 @@ header h2 {
     padding-bottom: 25px;
 }
 
+h3, h4 {
+    font-size: larger;
+}
+
 footer {
     font-size: 1.5rem;
     padding: 15px;

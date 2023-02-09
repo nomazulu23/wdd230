@@ -1,0 +1,46 @@
+:root {
+    --primary-color: #3ca9ed;
+    --secondary-color: #64e120a9;
+    --accent1-color: #e4d9c4;;
+    --accent2-color: #54dcf5;
+  
+    --heading-font: 'Merienda', Times, serif;
+    --paragraph-font: Arial, Helvetica, sans-serif;
+    --signature-font: 'Dancing Script', cursive;
+  
+    --header-background-color: var(--primary-color);
+    --paragraph-text-on-white: black;
+    --paragraph-text-on-color: black;
+    --nav-background-color: var(--secondary-color);
+    --nav-link-color:  #54dcf5 ;
+    --nav-hover-color: black;
+    --nav-hover-background-color: rgb(211, 171, 125);
+    --nav-active-link-color: var(--accent2-color);
+    --logo-box-shadow-color: var(--accent1-color);
+    --box-shadow-color: var(--accent1-color);
+    --nav-box-shadow-color: rgba(0, 0, 0, 0.9);
+
+}
+ 
+
+.primary-color { background-color: var(--primary-color);  color: rgb(5, 5, 5);}
+.secondary-color { background-color: var(--secondary-color);  color: rgb(6, 6, 6);}
+.accent1-color { background-color: var(--accent1-color);  color: rgb(11, 11, 11);}
+.accent2-color { background-color: var(--accent2-color); color: rgb(4, 4, 4);}
+
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: 30px auto;
+    text-align: center;
+    color: black;
+  }
+
+.colors th {
+    background-color: #999;
+  }
+
+.colors td{
+    width: 25%;
+    height: 3em;
+  }
