@@ -7,16 +7,32 @@ header {
     margin-left: auto;
     margin-right: auto;
     background-color: #f6b70a;
-    box-shadow: 10px 8px 5px #555;
     border-radius: 10px;
 }
 
-img {
+.banner {
+    display: grid;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+.banner h1{ 
+    grid-column: 2;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+    img {
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     width: 200px;
     height: 300px;
     box-shadow: 0 0 30px #555;
     float: right;
-    border-radius: 0 10px 0 0;
+    border-radius: 10px 10px 0 0;
 }
 
 h1, h2 {
@@ -32,7 +48,6 @@ ul {
 }
 
 main {
-    
     display: flex;
     flex-direction: column;
     margin: auto;
@@ -65,11 +80,11 @@ footer {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
-    box-shadow: 10px 8px 5px #555;
     border-radius: 10px;
 }
   
 main, footer, header {
+    box-shadow: 10px 8px 5px #555;
     max-width : 800px;
-    align-items: ;
+    align-items: center;
 }

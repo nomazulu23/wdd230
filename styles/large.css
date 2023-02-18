@@ -1,6 +1,8 @@
-@media only screen and (min-width: 74em)
+/* @media only screen and (min-width: 74em) */
 {
     .banner {
+        
         font-size: 3rem;
     }
-}
+}/* 64 is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {

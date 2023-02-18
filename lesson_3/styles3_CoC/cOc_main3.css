@@ -14,7 +14,6 @@
     }
 
    
-
     nav {
         background-color: #64e120a9;
         align-items: center;
@@ -38,6 +37,7 @@
     }
     
     main {
+        display: flex;
         flex-direction: column;
         margin: auto;
         justify-content: center;
