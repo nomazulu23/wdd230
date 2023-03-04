@@ -1,33 +1,30 @@
-//  Hamburger Navigation
-/* function toggleMenu() {
-  document.getElementById("main_nav").classList.toggle("open");
-  document.getElementById("hamburgerBtn").classList.toggle("open");
-}
-
-const x = document.getElementById('hamburgerBtn');
-x.onclick = toggleMenu;
-
-
 /* 
 this search 
 for the current 
 year id in the html
 */
-// let currentYear = new Date().getFullYear();
-// let currentYearElement = document.getElementById("currentYear");
+let currentYear = new Date().getFullYear();
+let currentYearElement = document.getElementById("currentYear");
 /* 
 uses the object Date 
 to obtain year 
 but we just need the year 
 that's why I use getFullYear()
-
+*/
 
 currentYearElement.innerHTML = currentYear;
  
 
+// /* last modified */
 
+let LastModif = new Date(document.lastModified);
+console.log(LastModif)
+let lastModificationTime = document.getElementById("lastModified");
+ 
+lastModificationTime.innerHTML = LastModif;
 
-/* date header 
+/* date header */
+
 var currentDate = new Date();
 var day = currentDate.getDay();
 var dayNum = currentDate.getDate();
@@ -42,7 +39,26 @@ var dateString = days[day] + ", " + dayNum + " " + months[month] + " " + year;
 document.getElementById("get_date").innerHTML = dateString;
 
 
-/* temperature script 
+const mainMenu = document.querySelector('.mainMenu');
+const closeMenu = document.querySelector('.closeMenu');
+const openMenu = document.querySelector('.openMenu');
+
+openMenu.addEventListener('click',show);
+closeMenu.addEventListener('click',close);
+
+function show(){
+    mainMenu.style.display = 'flex';
+    mainMenu.style.top = '0';
+}
+
+function close(){
+    mainMenu.style.top = '-100%';
+}
+
+
+
+/* temperature script */
+
 
 async function getWeather() {
   const response = await fetch("https://api.openweathermap.org/data/2.5/weather?appid=d1bf7498feb4f8b222047310ce70549e&units=metric&id=3529982");
@@ -62,72 +78,92 @@ async function displayWeather() {
 
 
 }
-
 displayWeather()
 
-// date for the footer
-const date = new Date();
+// Get the select element
+const selectBox = document.getElementById("membership-level");
 
-// current year
-const year = date.getFullYear();
-document.querySelector("#year").innerHTML = year;
-// Modified date
-let dateModified = ('Last updated: ' + document.lastModified);
-document.getElementById("date").innerHTML = dateModified;*/
-
-
-const year = document.querySelector("#year");
-let lastModified = document.querySelector("#lastModified");
-
-//Display on the screen the date of the last time there was a modification.
-lastModified.textContent = document.lastModified;
-
-//Display on the screen the current year.
-year.textContent = `${new Date().getFullYear()}`;
-
-const datefield = document.querySelector(".Currentdate");
-const now = new Date();
-const fulldate = new Intl.DateTimeFormat("en-US", { dateStyle: "full" }).format(
-	now
-);
-
-datefield.innerHTML = `<em>${fulldate}</em>`;
-
-const menuButton = document.querySelector('#menuButton');
-
-menuButton.addEventListener('click', function() {
-    toggleMenu();
+// Add event listener to the select element to detect changes
+selectBox.addEventListener("change", (event) => {
+  // Get the selected option
+  const selectedOption = event.target.options[event.target.selectedIndex];
+  
+  //Remove the selected attribute from all options
+  for (let i = 0; i < event.target.options.length; i++) {
+    event.target.options[i].removeAttribute("selected");
+  }
+  
+  // Set the selected attribute to the newly selected option
+  selectedOption.setAttribute("selected", "");
 });
 
+// start of the selected style
+const selectedStyle = {
+  borderRadius: '30%',
+  transition: 'border-radius 1s',
+  
+  
+};
 
-function toggleMenu() {
-    const navElement = document.querySelector('#main_nav');
-    navElement.classList.toggle('open');
-    document.querySelector('#hamburgerBtn').classList.toggle("open");
+// Define the initial style for the unselected elements
+const initialStyle = {
+  borderRadius: '10px',
+  transition: 'border-radius 1s',
+  
 }
 
-const p = document.createElement('p');
+// Set the selected style for the selected element
+function setSelectedStyle(element) {
+  element.style.borderRadius = selectedStyle.borderRadius;
+  element.style.transition = selectedStyle.transition;
+  
+}
 
-const event1 = document.querySelector('#event');
-const image = document.createElement('img');
-const myPicture = "planner.png";
-event1.append(image);
-event1.append(p);
-
-
-
-
-const d = new Date();
-
-if (d.getDay() >= 1 && d.getDay() <= 2){
-image.setAttribute("src", "images/" + myPicture);
-const weekMessage = "🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.";
-p.innerHTML = weekMessage;
-}else{
- const weekAnotherMessage = "New events coming soon."
- p.innerHTML = weekAnotherMessage;
+// Reset the unselected styles for the unselected elements
+function resetUnselectedStyles(selectedElement, elements) {
+  for (let i = 0; i < elements.length; i++) {
+    if (elements[i] !== selectedElement) {
+      elements[i].style.borderRadius = initialStyle.borderRadius;// indicates to reset
+      elements[i].style.transition = initialStyle.transition;// indicates to reset
+      
+    }
+  }
 }
 
 
+const npDiv = document.getElementById('np');
+const bronzeDiv = document.getElementById('bm');
+const silverDiv = document.getElementById('sm');
+const goldDiv = document.getElementById('gm');
+const membershipDivs = [npDiv, bronzeDiv, silverDiv, goldDiv];
+
+npDiv.addEventListener('click', () => {
+  setSelectedStyle(npDiv);
+  resetUnselectedStyles(npDiv, membershipDivs);
+  const npOption = document.querySelector('#membership-level [value=NP_Membership]');
+  npOption.selected = true;
+});
+
+bronzeDiv.addEventListener('click', () => {
+  setSelectedStyle(bronzeDiv);
+  resetUnselectedStyles(bronzeDiv, membershipDivs);
+  const bronzeOption = document.querySelector('#membership-level [value=Bronze_Membership]');
+  bronzeOption.selected = true;
+  
+});
+
+silverDiv.addEventListener('click', () => {
+  setSelectedStyle(silverDiv);
+  resetUnselectedStyles(silverDiv, membershipDivs);
+  const silverOption = document.querySelector('#membership-level [value=Silver_Membership]');
+  silverOption.selected = true;
+});
+
+goldDiv.addEventListener('click', () => {
+  setSelectedStyle(goldDiv);
+  resetUnselectedStyles(goldDiv, membershipDivs);
+  const goldOption = document.querySelector('#membership-level [value=Gold_Membership]');
+  goldOption.selected = true;
+});
 
  

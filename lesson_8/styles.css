@@ -1,0 +1,77 @@
+html{
+  background: linear-gradient(90deg, rgb(65, 175, 248) 0%, rgb(243, 246, 248) 100%, rgb(18, 121, 231) 100%);
+}
+
+:root {
+  --back: rgb(79, 133, 150);
+  --back2: hsla(182, 33%, 67%, 0.8);
+  --forelight: rgb(3, 16, 33);
+  --border: hsl(240, 3%, 6%);
+  --borderlight: hsl(0, 0%, 33%);
+  --zebra: hsl(191, 77%, 88%);
+}
+
+table {
+  margin: 10px auto;
+  border: thin solid var(--border);
+  border-collapse: collapse;
+  font-family: 'Playfair Display', serif;
+}
+
+div {
+  padding: 10px;
+  caption-side: bottom;
+  color: var(--back);
+  font-size: 0.9rem;
+}
+
+h1, p, footer {
+    text-align: center;
+    color: black;
+} 
+
+h1 {
+  background-color: hsla(182, 50%, 89%, 0.8);
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+  padding: 10px;
+  border-radius: 2%;
+}
+
+thead .title {
+  background-color: var(--back);
+  color: var(--forelight);
+}
+
+thead .row2 {
+  background-color: var(--back2);
+  color: var(--forelight);
+}
+
+thead th, td {
+    padding: 8px 15px;
+}
+
+tbody th, td {
+  padding: 8px 15px;
+  border: 1px solid var(--borderlight);
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--zebra);
+}
+
+th {
+  font-size: larger;
+}
+
+td {
+  text-align: center;
+}
+
+footer {
+  padding: 10px;
+  background-color: hsla(182, 50%, 89%, 0.8);
+  border-radius: 2%;
+}

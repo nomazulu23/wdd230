@@ -1,12 +1,12 @@
-@media (min-width: 1200px) 
-{
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,900&display=swap" rel="stylesheet">');
 
 body {
     max-width: 600px;
     margin: 0 auto;
     font-family: 'Playfair Display', serif;
-    
+        
 }
+
 
 .banner {
     width: 100%;
@@ -18,24 +18,23 @@ body {
     border-radius: 2%;
     box-shadow: 5px 5px 5px #ccc, -5px -5px 5px #969084;
     padding: 10px;
-    
-  }
+}
 
   
-  .banner img {
-    width: 180px;
-    height: 250px;
-    object-fit: contain; 
-    box-shadow: 5px 2px 5px 2px #ccc,
+.banner img {
+    width: 160px;
+    height: 240px;
+    object-fit: contain;
+    box-shadow: 5px 2px 5px 2px #ccc, 
   }
 
 
   .banner h1 {
     font-size: 30px;
     font-weight: bold;
-    padding: 0px 0px 0px 100px; 
+    padding: 0px 0px 0px 100px;
   }
-
+  
   main {
     width: 100%;
     background-color: rgb(215, 213, 213);
@@ -44,7 +43,7 @@ body {
     border-radius: 2%;
     text-align: center; 
     box-shadow: 5px 5px 5px #ccc, -5px -5px 5px #969084;
-  }
+  } 
   
   ul {
     text-align: left;
@@ -57,8 +56,8 @@ body {
 
   footer {
     width: 100%;
-    height: 50px;
-    background-color:#f6b70a; 
+    height: 100%;
+    background-color: #f6b70a; 
     display: flex; 
     align-items: center; 
     justify-content: center; 
@@ -71,6 +70,4 @@ body {
     text-align: center;
     padding: 10px;
     font-size: 1em;
-
   }
-}

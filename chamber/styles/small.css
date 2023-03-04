@@ -1,0 +1,25 @@
+@media(max-width: 799px) {
+
+body {
+	max-width: 600px;
+	margin: 0 auto;
+	font-family: 'Playfair Display', serif;
+			
+	}
+	
+	footer {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 3fr 1fr;
+		justify-items: center;
+		align-items: center;
+		background-color: #3Ca9ed;
+		text-align: center;
+		font-family: "Play", sans-serif;
+		color: #ffffff;
+		padding: 0 0.5rem;
+		border: 1px solid rgba(0, 0, 0, 0.2);
+		font-family: 'Playfair Display', serif;
+	}
+	
+}

@@ -1,19 +1,22 @@
-
-main {
+@media (min-width: 1200px) {
+main {  
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
 
-.visualColumn {
+.visualColumn { 
     grid-column: 1/2;
+    grid-row: 1/1;
 }
 
 .whiteSpaceColumn {
     grid-column: 2/3;
+    grid-row: 1/1;
 }
 
 .repetitionColumn {
     grid-column: 3/4;
+    grid-row: 1/1;
 }
 
 header, footer {
@@ -68,5 +71,6 @@ footer {
 .img_vis, .img_wht, .img_rep {
     max-width: 100%;
     margin-top: 15px;
+}
 }
 

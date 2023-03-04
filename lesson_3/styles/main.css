@@ -1,5 +1,7 @@
+@media (min-width: 1245px) {
 
     header {
+        max-width: 100%;
         flex-flow: row wrap;
         grid-template-columns: auto auto;
         background-color: #3ca9ed;
@@ -18,7 +20,19 @@
         background-color: #64e120a9;
         align-items: center;
         justify-content: center ;
+        margin: 0 auto;
+        
     }
+
+    nav a {
+		font-size: 1.1rem;
+	}
+
+    nav ul {
+		display: grid;
+ 		grid-template-columns: repeat(3, 1fr); 
+		list-style: none;
+	} 
     
     img {
         width: 200px;
@@ -72,3 +86,4 @@
         box-shadow: 10px 8px 5px #555;
         border-radius: 10px;
     }
+}

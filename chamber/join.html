@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title> Nurse Care Chamber of Commerce</title>
+        <meta name="description" content="Site for the Nurse Care Chmaber of Commerce for Lublin">
+        <link rel="icon" href="images/favicon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="/wdd230/chamber/styles/large.css" rel="stylesheet">
+        <link rel="stylesheet" href="/wdd230/chamber/styles/medium.css" rel="stylesheet">
+        <link rel="stylesheet" href="/wdd230/chamber/styles/small.css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <nav id="main_nav">
+                <ul >
+                    <img id="headerlogo"  src="../chamber/images/Nurse Care logo.jpeg" alt="Nurse Care Chamber of Commerce Logo">
+                    <h1>Nurse Care Chamber of Commerce</h1>
+
+                    <li class="active"><a href="/wdd230/chamber/index.html">Home</a></li>
+                    <li class="nav_style"><a href="/wdd230/chamber/discover.html">Discover</a></li>
+                    <li class="nav_style"><a href="/wdd230/chamber/directory.htm">Directory</a></li>
+                    <li class="nav_style"><a href="/wdd230/chamber/join.html">Join</a></li>
+                    <li class="nav_style"><a href="/wdd230/chamber/contact.html">Contact Us</a></li>    
+                                   
+                    <li> <img id="facebook" src="/wdd230/chamber/images/facebook icon.jpeg" alt="Facebook"></li>
+                    <li> <img id="linkedin" src="/wdd230/chamber/images/Linkedin Icon.jpeg" alt="LinkedIn"></li>
+                
+                    <button id="hamburgerBtn">&#9776;</button>
+                </ul>   
+            </nav> 
+        </header>
+            
+        <div class="date">
+            <span class="paragraph-text" id="get_date"></span>
+        </div>
+
+        
+        <main class="join_form">
+            <section>
+                <h2>Nurse Care Chamber of Commerce</h2>
+                <form name="join-form" action="thankyou.html">
+                    <fieldset>
+                        <legend>Contact Information</legend>
+                        <label>First name <input type="text" name="first-name" required></label>
+                        <label>Last name <input type="text" name="last-name" required></label>
+                        <label>Title <input type="text" name="title" pattern="[A-Za-z-\s]{7,}"></label>
+                        <label>Email <input type="email" name="email" placeholder="name@example.com" required></label>
+                        <label>Cell Phone <input type="tel" name="cellphone" required></label>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Business Information</legend>
+                        <label class="top">Business Name <input type="text" name="business-name" required> </label>
+                        <label class="top">Membership Level
+                            <select name="membership-level">
+                                <option value="">Please Select &#9662;</option>
+                                <option value="np">NP Membership</option>
+                                <option value="bronze">Bronze Membership</option>
+                                <option value="silver">Silver Membership</option>
+                                <option value="gold">Gold Membership</option>
+                            </select>
+                        </label>
+                        <label class="top">Business Description <textarea name="business-description"></textarea> </label>
+                        <input type="hidden" name="date-time" id="date-time" value="">
+                    </fieldset>
+
+                    <input type="submit" value="Join" class="submit" >
+
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <img src="../chamber/images/Nurse Care logo.jpeg" alt="Nurse Care Logo" >
+            
+            <div class="address"></div>
+                <p>Nurses Care Chamber of Commerce</p>
+                <p>Muzyczna7 , 20-612 </p>
+                <p>Lublin, Poland</p>
+            </div>
+
+            
+            <div class="contactInfo">
+                <p>info@nursescarelublin.org</p>
+                <p>+48 792 654 346</p>
+                <p id="map"><a href="https://www.google.com/maps/place/Muzyczna+7,+20-612+Lublin/@51.2379706,22.5519314,17z/data=!3m1!4b1!4m5!3m4!1s0x47225771a3c6aae7:0xede1f23373f82be!8m2!3d51.2379673!4d22.5541201" 
+                    id="map1">📍 Location Map </a></p>
+            </div>
+
+            <hr>
+
+            <p>&copy;<span id="year"></span> 
+                Nurse Care Chamber of Commerce| Heather Jasi | WDD 230 Project | 
+            <br>
+                <span id="date"></span> </p>
+                
+        </footer>
+        
+        <script src="/wdd230/chamber/scripts/script.js"></script>
+        <script src="/wdd230/chamber/scripts/windchill.js" async defer></script>
+    </body>
+</html>
