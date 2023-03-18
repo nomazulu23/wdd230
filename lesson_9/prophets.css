@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Playfair+Display:wght@400;700&display=swap");
+
 html{
     background: linear-gradient(90deg, #722620 0%, #F7ecdf 100%, #ffffff 100%);
   }
@@ -58,7 +60,7 @@ img{
     height: 100%;
     max-width: 325px;
     box-shadow: 0 0 30px #722620;
-    border: 10x solid #efc8b1;
+    border: 10px solid #efc8b1;
     object-fit: contain;
 }
 

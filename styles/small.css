@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,900&display=swap" rel="stylesheet">');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,900&display=swap" rel="stylesheet');
 
 body {
     max-width: 600px;
@@ -22,11 +22,11 @@ body {
 
   
 .banner img {
-    width: 160px;
-    height: 240px;
-    object-fit: contain;
-    box-shadow: 5px 2px 5px 2px #ccc, 
-  }
+  width: 160px;
+  height: 240px;
+  object-fit: contain;
+  box-shadow: 5px 2px 5px 2px #ccc; 
+}
 
 
   .banner h1 {

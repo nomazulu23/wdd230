@@ -4,139 +4,166 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <title> Nurse Care Chamber of Commerce</title>
+        <title> Nurse Care Chamber of Commerce</title>
         <meta name="description" content="Site for the Nurse Care Chmaber of Commerce for Lublin">
-        <link rel="icon" href="images/favicon.png">
+        <link rel="icon" href="/wdd230/chamber/images/favicon.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="stylesheet" href="/wdd230/chamber/styles/large.css" rel="stylesheet">
-        <link rel="stylesheet" href="/wdd230/chamber/styles/medium.css" rel="stylesheet">
-        <link rel="stylesheet" href="/wdd230/chamber/styles/small.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/wdd230/chamber/styles/large.css">
+        <link rel="stylesheet" href="/wdd230/chamber/styles/medium.css">
+        <link rel="stylesheet" href="/wdd230/chamber/styles/small.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <header>
-            <nav id="main_nav">
-                <ul >
-                    <img id="headerlogo"  src="../chamber/images/Nurse Care logo.jpeg" alt="Nurse Care Chamber of Commerce Logo">
-                    <h1>Nurse Care Chamber of Commerce</h1>
+            <div class="headerlogo">
+                <img src="/wdd230/chamber/images/NurseCareLogo.jpg" alt="Logo image for Nurse Care Chamber of Commerce">
+            </div>
 
-                    <li class="active"><a href="/wdd230/chamber/index.html">Home</a></li>
-                    <li class="nav_style"><a href="/wdd230/chamber/discover.html">Discover</a></li>
-                    <li class="nav_style"><a href="/wdd230/chamber/directory.htm">Directory</a></li>
-                    <li class="nav_style"><a href="/wdd230/chamber/join.html">Join</a></li>
-                    <li class="nav_style"><a href="/wdd230/chamber/contact.html">Contact Us</a></li>    
-                                   
-                    <li> <img id="facebook" src="/wdd230/chamber/images/facebook icon.jpeg" alt="Facebook"></li>
-                    <li> <img id="linkedin" src="/wdd230/chamber/images/Linkedin Icon.jpeg" alt="LinkedIn"></li>
-                
-                    <button id="hamburgerBtn">&#9776;</button>
-                </ul>   
-            </nav> 
-        </header>
+            <h1>Nurse Care Chamber of Commerce</h1>
             
+            <nav>
+                <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>    
+                <ul id="primaryNav">        
+                    <li class = "active"><a href="index.html"><p class="sample-siteheader">Home</p></a></li>
+                    <li><a href="/wdd230/chamber/discover.html"><p class="sample-siteheader">Discover</p></a></li>
+                    <li><a href="/wdd230/chamber/directory.html"><p class="sample-siteheader">Directory</p></a></li>
+                    <li><a href="/wdd230/chamber/join.html"><p class="sample-siteheader">Join</p></a></li>
+                    <li><a href="/wdd230/chamber/contact.html"><p class="sample-siteheader">Contact</p></a></li>
+                    <li><a href="https://www.facebook.com/"><img id = "facebook" src="/wdd230/chamber/images/facebook.jpg" alt="Facebook"></a></li>
+                    <li><a href="https://www.linkedIn.com/"><img id = "linkedIn" src="/wdd230/chamber/images/linkedIn.jpg"  alt="LinkedIn"></a></li>
+                </ul>
+            </nav>
+        </header>
+
+
         <div class="date">
-            <span class="paragraph-text" id="get_date"></span>
+            <span id="get_date"></span>
         </div>
 
         
         <main>
-            <div class="containers">
-                <div class="hero">
-                    <picture>
-                        <source media="(max-width: 800px)" srcset="images/small_wdd230.webp">
-                        <source media="(max-width: 1200px)" srcset="images/med_wdd230.webp">
-                        <img src="images/Nurse.jpeg" alt="Nurse checking drip">
-                    </picture>
-                    <button class="hero-button">Hero with site name and call to action</button>
-                </div>
-
+            <div class="main_container">
                 <div class="event">
-                    <p class="paragraph-text">
-                    <h2>Medical Stuff Event</h2>
-                    <p class="paragraph-text">Are you a nurse of an aspiring Nurse.
-                    You are cordially invited to come and join hundreds of other medical personel in exploring opportunities </p>
+                    <!-- <p class="paragraph-text"> -->
+                        <h2>Networking Event</h2>
+                        <br>
+                        <p class="paragraph-text">Are you a nurse of an aspiring Nurse.</p>
+                        <br>
+                        <p class="paragraph-text">You are cordially invited to come and join hundreds of other medical personel in exploring opportunities </p><a href="">more info ...</a>
+                    <!-- </p> -->
                 </div>
 
                 <div class="weather">
                     <div class="weather-box">
                         <h2>Weather</h2>
-                        <i class="fa fa-thermometer-half"></i>
+                        <div>
+                            <p>The current temperature in Lublin is <span id="current-temp"></span> &deg;C</p>
+                            <h2>Current Condition Icon</h2>
+                            <figure>
+                                <img src="" alt="" id="weather-icon"/>
+                                <figcaption></figcaption>
+                            </figure>
+                        <hr>    
+                        <p id="windspeed"> Wind-speed : km/h </p>   
+                        </div>
+
+
+                        
+
+                        <!-- <i class="fa fa-thermometer-half"></i>
                         <div class="upside-weather">
                             <p><span id="weather-temp"></span>°C</p>
                         </div>
                         <p><span id="weather-desc"></span></p>
                         <hr>
                         <p>Wind Speed: <span id="wind-speed"></span> km/h</p>
-                        <p>Wind Chill: <span id="wind-chill"></span></p>
+                        <p>Wind Chill: <span id="wind-chill"></span></p> -->
                     </div>
                 </div>
 
                 <div class="join">
-                    <button class="join-button">Apply</button>
-                    <p class="paragraph-text"> Apply for nursing opportunies with the world leading organisations in matters of Health.</p>
+                    <button class="join_btn"><a href="/wdd230/chamber/join.html">Join Us!</a></button>
+                    <p class="paragraph-text">Apply for nursing opportunies with the world leading organisations in matters of Health</p>
                 </div>
                 
-                <div class="newsrelease">
-                    <div class="text-new-release">
+                <div class="hero">
+                    <picture>
+                        <source media="(max-width: 800px)" src="/wdd230/chamber/images/NurseMedium.jpg">
+                        <source media="(max-width: 1200px)" src="/wdd230/chamber/images/NurseSmall.jpg">
+                        <img src="/wdd230/chamber/images/NurseLarge.jpeg" alt="Nurse checking drip">
+                    </picture>
+                    <button class="hero_btn">Hero with site name and call to action</button>
+                </div>
+
+                <div class="news_release">
+                    <!-- <div class="text-new-release"> -->
                         <h2>News Release</h2>
-                        <h3> Nursing Ranked as the Mostt Trusted Profession for 21sr Year in a Row</h3>
-                        <p class="paragraph-text"> For an impressive 21st year, nursing was rated as the most trusted profession once again in 2022, according to a Gallup poll.
-                             Despite its #1 ranking, only 79% of U.S. adults now believe nurses have “very high” or “high” honesty and ethical standards. 
-                             Unfortunately, this is 10 percentage points lower than the highest rating for nurses during 2020 and the height of the COVID-19 pandemic…
-                             https://nurse.org/articles/nursing-ranked-most-honest-profession/ </p>
+                        <h3> Nursing Ranked as the Most Trusted Profession for 21sr Year in a Row</h3>
+                        <p class="paragraph-text">For an impressive 21st year, nursing was rated as the most trusted profession once again in 2022, according to a Gallup poll.
+                            Despite its #1 ranking, only 79% of U.S. adults now believe nurses have “very high” or “high” honesty and ethical standards. 
+                            Unfortunately, this is 10 percentage points lower than the highest rating for nurses during 2020 and the height of the COVID-19 pandemic…
+                        <a href= 'https://nurse.org/articles/nursing-ranked-most-honest-profession/'>https://nurse.org/articles/nursing-ranked-most-honest-profession/</a></p>
+                    <!-- </div> -->
+                </div>
+
+                <div class="spotlight">
+                    <div class="start">
+                        <h2>Where to start</h2>
+                        <img  src="/wdd230/chamber/images/studentNurse.jpg" alt="Student Nurse from class"><br>
+                        <p>"A journey to a 1000 miles begin with one step"</p><br>
+                        <p>+48 792 659 436</p><br>
+                        <p>contact@nursecarestart.com</p>
+                    </div>
+
+                    <div class="opportunities">
+                        <h2>Opportunities</h2>
+                        <img  src="/wdd230/chamber/images/Hospital.jpg" alt="Beautiful big hospital"> <br>
+                        <p>"Great opportunities and great reward at your door step"</p><br>
+                        <p>+48 792 659 436</p><br>
+                        <p>contact@nursecareopp.com</p>
+                    </div>
+
+                    <div class="apply">
+                        <h2>Application</h2>
+                        <img src="/wdd230/chamber/images/nursesApply.jpg" alt="image of a car"> <br>
+                        <p>"Dont wait another meeting, brighter future awaits"</p><br>
+                        <p>+48 792 659 436</p><br>
+                        <p>contact@nursecareapply.com</p>
                     </div>
                 </div>
-            
-                <div class="spotlight">
-                    <div class="smallbox1">
-                        <h2>Where to Start</h2>
-                        <img class="car-icon" src="images/Student Nurse.jpeg" alt="Student Nurse holding book">
-                        <p> Get started with your journey to success</p>
-                    </div>
-
-                    <div class="smallbox2">
-                        <h2>Opportunities</h2>
-                        <img class="colors-icon" src="images/Big hospitals.jpeg" alt="Hospital Building">
-                         <p>Great opportunities and great reward at your door step</p>
-                        </div>
-
-                    <div class="smallbox3">
-                        <h2>Application</h2>
-                        <img class="house-icon" src="images/Appying for Nursing.jpeg" alt="Two nurses filling a form">
-                        <p> Dont wait another meeting, brighter future awaits</p>
-                    </div>
             </div>
         </main>
 
-    
         <footer>
-            <img src="../chamber/images/Nurse Care logo.jpeg" alt="Nurse Care Logo" >
-            
-            <div class="address"></div>
-                <p>Nurses Care Chamber of Commerce</p>
-                <p>Muzyczna7 , 20-612 </p>
-                <p>Lublin, Poland</p>
-            </div>
+            <div class="footer_container">
 
-            
-            <div class="contactInfo">
-                <p>info@nursescarelublin.org</p>
-                <p>+48 792 654 346</p>
-                <p id="map"><a href="https://www.google.com/maps/place/Muzyczna+7,+20-612+Lublin/@51.2379706,22.5519314,17z/data=!3m1!4b1!4m5!3m4!1s0x47225771a3c6aae7:0xede1f23373f82be!8m2!3d51.2379673!4d22.5541201" 
-                    id="map1">📍 Location Map </a></p>
+                <div class="left">
+                    <img src="/wdd230/chamber/images/NurseCareLogo.jpg" alt="Nurse Care Chamber of Commerce Logo" > 
+                </div>
+
+                <div>
+                    <p><b>Nurses Care Chamber of Commerce</b> 
+                    <br>Muzyczna 7 , 20-612 <br>Lublin, Poland</p>                       
+                </div>
+
+                <div>
+                    <p>info@nursescarelublin.or</p>
+                    <p>+48 792 654 346</p>
+                    <p><a style="color: #e4d9c4;" href="https://www.google.com/maps/place/Muzyczna+7,+20-612+Lublin/@51.2379706,22.5519314,17z/data=!3m1!4b1!4m5!3m4!1s0x47225771a3c6aae7:0xede1f23373f82be!8m2!3d51.2379673!4d22.5541201">📍 Location Map</a></p>
+                </div>
             </div>
 
             <hr>
-
-            <p>&copy;<span id="year"></span> 
-                Nurse Care Chamber of Commerce| Heather Jasi | WDD 230 Project | 
-            <br>
-            <span id="date"></span> </p>
-                
+            
+            <p> © <span id="currentYear"></span> Nurse Care Chamber of Commerce
+             ..::| Heather Jasi |::.. Lublin, Poland
+                <br>
+                Last Updated:<span id="lastModified"></span></p>
         </footer>
         
-        <script src="/wdd230/chamber/scripts/script.js"></script>
+        <script src="/wdd230/chamber/scripts/script.js" async defer></script>
         <script src="/wdd230/chamber/scripts/windchill.js" async defer></script>
     </body>
 </html>

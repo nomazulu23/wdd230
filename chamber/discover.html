@@ -4,120 +4,121 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <title> Nurse Care Chamber of Commerce</title>
+        <title> Nurse Care Chamber of Commerce</title>
         <meta name="description" content="Site for the Nurse Care Chmaber of Commerce for Lublin">
-        <link rel="icon" href="images/favicon.png">
+        <link rel="icon" href="/wdd230/chamber/images/favicon.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-        <link rel="stylesheet" href="/wdd230/chamber/styles/large.css" rel="stylesheet">
-        <link rel="stylesheet" href="/wdd230/chamber/styles/medium.css" rel="stylesheet">
-        <link rel="stylesheet" href="/wdd230/chamber/styles/small.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/wdd230/chamber/styles/large.css">
+        <link rel="stylesheet" href="/wdd230/chamber/styles/medium.css">
+        <link rel="stylesheet" href="/wdd230/chamber/styles/small.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     </head>
 
     <body>
         <header>
-            <nav id="main_nav">
-                <ul >
-                    <img id="headerlogo"  src="../chamber/images/Nurse Care logo.jpeg" alt="Nurse Care Chamber of Commerce Logo">
-                    <h1>Nurse Care Chamber of Commerce</h1>
+            <div class="headerlogo">
+                <img src="/wdd230/chamber/images/NurseCareLogo.jpg" alt="Logo image for Nurse Care Chamber of Commerce">
+            </div>
 
-                    <li class="active"><a href="/wdd230/chamber/index.html">Home</a></li>
-                    <li class="nav_style"><a href="/wdd230/chamber/discover.html">Discover</a></li>
-                    <li class="nav_style"><a href="/wdd230/chamber/directory.htm">Directory</a></li>
-                    <li class="nav_style"><a href="/wdd230/chamber/join.html">Join</a></li>
-                    <li class="nav_style"><a href="/wdd230/chamber/contact.html">Contact Us</a></li>    
-                                   
-                    <li> <img id="facebook" src="/wdd230/chamber/images/facebook icon.jpeg" alt="Facebook"></li>
-                    <li> <img id="linkedin" src="/wdd230/chamber/images/Linkedin Icon.jpeg" alt="LinkedIn"></li>
-                
-                    <button id="hamburgerBtn">&#9776;</button>
-                </ul>   
-            </nav> 
-        </header>
+            <h1>Nurse Care Chamber of Commerce</h1>
             
+            <nav>
+                <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>    
+                <ul id="primaryNav">  
+                    <li><a href="index.html"><p class="sample-siteheader">Home</p></a></li>
+                    <li><a href="/wdd230/chamber/discover.html"><p class="sample-siteheader">Discover</p></a></li>
+                    <li><a href="/wdd230/chamber/directory.html"><p class="sample-siteheader">Directory</p></a></li>
+                    <li><a href="/wdd230/chamber/join.html"><p class="sample-siteheader">Join</p></a></li>
+                    <li><a href="/wdd230/chamber/contact.html"><p class="sample-siteheader">Contact</p></a></li>
+                    <li><a href="https://www.facebook.com/"><img id = "facebook" src="/wdd230/chamber/images/facebook.jpg" alt="Facebook"></a></li>
+                    <li><a href="https://www.linkedIn.com/"><img id = "linkedIn" src="/wdd230/chamber/images/linkedIn.jpg"  alt="LinkedIn"></a></li>
+                </ul>
+            </nav>
+        </header>
+
+
         <div class="date">
-            <span class="paragraph-text" id="get_date"></span>
+            <span id="get_date"></span>
         </div>
 
         
         <main>
-            <h2> Explore Lublin</h2>
-            <div class="image-container">
+            <div class="discover_main">
+
+                <div class="picture">
+                    <h1>Lublin City</h1>
+                    <h2>Welcome to the city of Lublin</h2>
+                    <p> Lublin is the largest city in Eastern Poland, and the capital of the Voivodship (province) of Lublin; it is the ‘Gateway of the European Union into the East’, the capital of Eastern Poland.
+                    <hr> Population: 341 722 <br> Population density: 2317 people/km^2 <br> Economic data: 43 000 registered companies</p>
+                </div>
                 
-                <div class="info-container">   
-                    <picture>
-                        <img class="discover-img" src="/wdd230/chamber/images/discover_images/Lublin Castle.jpeg" data-src="discover_images/Lublin Castle.jpeg" alt="Lublin Castle">
-                    </picture>
-                    <p class="text-info"> The Lublin Castle (Polish: Zamek Lubelski) is a medieval castle in Lublin, Poland, adjacent to the Old Town district and close to the city center.
+                
+                <div class="picture">   
+                        <img  src="/wdd230/chamber/images/discover_images/placeholder.jpeg"  data-src="/wdd230/chamber/images/discover_images/lublinCastle.jpeg"  alt="Lublin Castle">
+                    <p> The Lublin Castle (Polish: Zamek Lubelski) is a medieval castle in Lublin, Poland, adjacent to the Old Town district and close to the city center.
                          It is one of the oldest preserved royal residencies in Poland, initially established by High Duke Casimir II the Just.
                          Its contemporary Gothic Revival appearance is largely due to a reconstruction undertaken in the 19th century.</p>
                 </div>
 
-                <div class="info-container">
-                    <picture>
-                        <img class="discover-img" src="/wdd230/chamber/images/discover_images/Grandhotel.jpeg" data-src="discover_images/Grandhotel.jpeg" alt="Grandhotel in Lublin">    
-                    </picture>
-                    <p class="text-info"> IBB Hotel Grand Hotel Lublin is a hundred-year-old, beautifully renovated building right in the heart of Lublin. 
+                <div class="picture">
+                    <img " src="/wdd230/chamber/images/discover_images/placeholder.jpeg" data-src="/wdd230/chamber/images/discover_images/grandhotel.jpeg"  alt="Grandhotel in Lublin">    
+                    <p > IBB Hotel Grand Hotel Lublin is a hundred-year-old, beautifully renovated building right in the heart of Lublin. 
                         Its unique atmosphere is created by meticulously restored architectural details and the noble interior design of the Belle Epoque. 
                         The convenient location of the hotel, beautiful interiors and the professional service are certainly a guarantee of an unforgettable experience. </p>
                 </div>
 
-                <div class="info-container">
-                    <picture>
-                        <img class="discover-img" src="/wdd230/chamber/images/discover_images/Old Town.jpeg" data-src="discover_images/Old Town.jpeg" alt="Town Square area in Old Town in Lublin">
-                    </picture>
-                    <p class="text-info">The Old Town is anchored by 19th-century Lublin Castle, incorporating the medieval Holy Trinity Chapel, with its Byzantine frescoes. 
+                <div class="picture">
+                    <img src="/wdd230/chamber/images/discover_images/placeholder.jpeg" data-src="/wdd230/chamber/images/discover_images/oldTown.jpeg" alt="Town Square area in Old Town in Lublin">
+                    <p >The Old Town is anchored by 19th-century Lublin Castle, incorporating the medieval Holy Trinity Chapel, with its Byzantine frescoes. 
                         Lubelska Trasa Podziemna is a network of underground passages featuring heritage displays, while the Trynitarska Tower offers views of the area’s pastel-hued buildings.
                         Souvenir shops, traditional cafes known as “milk bars,” al fresco restaurants, and pubs line the cobbled streets.</p>
                 </div>
 
-                <div class="info-container">
-                    <picture>
-                        <img class="discover-img" src="/wdd230/chamber/images/discover_images/Centrum Spotkania Kultur w Lublinie.jpeg" data-src="discover_images/Centrum Spotkania Kultur w Lublinie.jpeg" alt="Centrum Spotkania Kultur w Lubli">
-                    </picture>
-                    <p class="text-info"> The Center for the Meeting of Cultures in Lublin is an impressive project created on a grand scale, which is to be the center of the cultural life of the region.
+                <div class="picture" >
+                    <img  src="/wdd230/chamber/images/discover_images/placeholder.jpeg" data-src="/wdd230/chamber/images/discover_images/centrumKulture.jpeg"  alt="Centrum Spotkania Kultur w Lubli">
+                    <p > The Center for the Meeting of Cultures in Lublin is an impressive project created on a grand scale, which is to be the center of the cultural life of the region.
                         The demanding project, designed by architect Bolesław Stelmach, uses modern architectural solutions. 
                         Glass combined with the industrial arrangement of CSK created an unusual building, which is the essence of contemporary architecture.</p>
                 </div>
                 
-                <div class="info-container">
-                    <picture>
-                        <img class="discover-img" src="/wdd230/chamber/images/discover_images/Majdanek Concentration Camp.jpeg " data-src="discover_images/Majdanek Concentration Camp.jpeg" alt="mexican revolutionary, Emiliano Zapata">    
-                    </picture>
-                    <p class="text-info"> Majdanek, also spelled Maidanek, also called Lublin-Majdanek, Nazi German concentration and extermination camp on the southeastern outskirts of the city of Lublin, Poland.
+                <div class="picture">
+                    <img src="/wdd230/chamber/images/discover_images/placeholder.jpeg" data-src="/wdd230/chamber/images/discover_images/MajdanekCamp.jpeg "  alt="Majdanek Camp in Lublin">    
+                    <p> Majdanek, also spelled Maidanek, also called Lublin-Majdanek, Nazi German concentration and extermination camp on the southeastern outskirts of the city of Lublin, Poland.
                          In October 1941 it received its first prisoners, mainly Soviet prisoners of war, virtually all of whom died of hunger and exposure. 
                          Within a year, however, it was converted into a death camp for Jews, transported first from Bohemia and Moravia (now in the Czech Republic) and then from Poland, The Netherlands, and Greece.</p>
                 </div>
-            </div>    
+            </div>
         </main>
 
-        <footer>
-            <img src="../chamber/images/Nurse Care logo.jpeg" alt="Nurse Care Logo" >
-            
-            <div class="address"></div>
-                <p>Nurses Care Chamber of Commerce</p>
-                <p>Muzyczna7 , 20-612 </p>
-                <p>Lublin, Poland</p>
-            </div>
+        <footer> 
+            <div class="footer_container">
 
-            
-            <div class="contactInfo">
-                <p>info@nursescarelublin.org</p>
-                <p>+48 792 654 346</p>
-                <p id="map"><a href="https://www.google.com/maps/place/Muzyczna+7,+20-612+Lublin/@51.2379706,22.5519314,17z/data=!3m1!4b1!4m5!3m4!1s0x47225771a3c6aae7:0xede1f23373f82be!8m2!3d51.2379673!4d22.5541201" 
-                    id="map1">📍 Location Map </a></p>
+                <div class="left">
+                    <img src="/wdd230/chamber/images/NurseCareLogo.jpg" alt="Nurse Care Chamber of Commerce Logo" >
+                </div>
+
+                <div>
+                    <p><b>Nurses Care Chamber of Commerce</b>
+                    <br>Muzyczna 7 , 20-612 <br>Lublin, Poland</p>                       
+                </div>
+
+                <div>
+                    <p>info@nursescarelublin.or</p>
+                    <p>+48 792 654 346</p>
+                    <p><a style="color: #e4d9c4;" href="https://www.google.com/maps/place/Muzyczna+7,+20-612+Lublin/@51.2379706,22.5519314,17z/data=!3m1!4b1!4m5!3m4!1s0x47225771a3c6aae7:0xede1f23373f82be!8m2!3d51.2379673!4d22.5541201">📍 Location Map</a></p>
+                </div>
+
+                
             </div>
 
             <hr>
 
-            <p>&copy;<span id="year"></span> 
-                Nurse Care Chamber of Commerce| Heather Jasi | WDD 230 Project | 
+            <p> © <span id="currentYear"></span> ..::| Heather Jasi |::.. Lublin, Poland 
                 <br>
-                <span id="date"></span> </p>
-                
+                Last Updated:<span id="lastModified"></span></p>
         </footer>
         
-        <script src="/wdd230/chamber/scripts/script.js"></script>
+        <script src="/wdd230/chamber/scripts/script.js" async defer></script>
         <script src="/wdd230/chamber/scripts/windchill.js" async defer></script>
     </body>
 </html>

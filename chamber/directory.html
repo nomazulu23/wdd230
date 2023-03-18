@@ -11,6 +11,7 @@
         <link rel="stylesheet" href="/wdd230/chamber/styles/large.css">
         <link rel="stylesheet" href="/wdd230/chamber/styles/medium.css">
         <link rel="stylesheet" href="/wdd230/chamber/styles/small.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
         <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     </head>
 
@@ -24,7 +25,7 @@
             
             <nav>
                 <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>    
-                <ul id="primaryNav">     
+                <ul id="primaryNav">  
                     <li><a href="index.html"><p class="sample-siteheader">Home</p></a></li>
                     <li><a href="/wdd230/chamber/discover.html"><p class="sample-siteheader">Discover</p></a></li>
                     <li><a href="/wdd230/chamber/directory.html"><p class="sample-siteheader">Directory</p></a></li>
@@ -36,37 +37,43 @@
             </nav>
         </header>
 
+
         <div class="date">
             <span id="get_date"></span>
         </div>
 
-        <main>
-            <p> Please call us at : 0000000000000</p>
-
-        </main>
+        
+        <main id="directory">
+            <div class="menu">
+                <button id="grid">⏹️Grid</button>
+                <button id="list">📄List</button>
+            </div>
+            <hr>
+                <div class="cards"></div>
+        </main> 
 
         <footer>
             <div class="footer_container">
 
                 <div class="left">
-                    <img src="/wdd230/chamber/images/NurseCareLogo.jpg" alt="Nurse Care Chamber of Commerce Logo" > 
+                    <img src="/wdd230/chamber/images/NurseCareLogo.jpg" alt="Nurse Care Chamber of Commerce Logo" >
                 </div>
 
                 <div>
-                    <p><b>Nurses Care Chamber of Commerce</b> 
+                    <p><b>Nurses Care Chamber of Commerce</b>
                     <br>Muzyczna 7 , 20-612 <br>Lublin, Poland</p>                       
                 </div>
 
                 <div>
                     <p>info@nursescarelublin.or</p>
                     <p>+48 792 654 346</p>
-                    <p><a style="color: #e4d9c4;" href="https://www.google.com/maps/place/Muzyczna+7,+20-612+Lublin/@51.2379706,22.5519314,17z/data=!3m1!4b1!4m5!3m4!1s0x47225771a3c6aae7:0xede1f23373f82be!8m2!3d51.2379673!4d22.5541201">📍 Location Map</a></p>
+                    <p><a style="color: #e4d9c4" href="https://www.google.com/maps/place/Muzyczna+7,+20-612+Lublin/@51.2379706,22.5519314,17z/data=!3m1!4b1!4m5!3m4!1s0x47225771a3c6aae7:0xede1f23373f82be!8m2!3d51.2379673!4d22.5541201">📍 Location Map</a></p>
                 </div>
             </div>
 
             <hr>
-            
-            <p> © <span id="currentYear"></span> ..::| Heather Jasi |::.. Lublin, Poland
+
+            <p> © <span id="currentYear"></span> ..::| Heather Jasi |::.. Lublin, Poland 
                 <br>
                 Last Updated:<span id="lastModified"></span></p>
         </footer>
@@ -74,4 +81,6 @@
         <script src="/wdd230/chamber/scripts/script.js" async defer></script>
         <script src="/wdd230/chamber/scripts/windchill.js" async defer></script>
     </body>
-</html>   
+</html>
+
+

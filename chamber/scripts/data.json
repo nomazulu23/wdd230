@@ -1,0 +1,46 @@
+{
+    "companies": [
+      {
+        "name": "Botanik Medicine",
+        "address": "ul Willowa 60, Lublin",
+        "imageurl": "/wdd230/chamber/images/directory_images/Botanik Medicine.jpeg"
+      },
+      {
+        "name": "NFZ Health Insurance",
+        "address": "ul Szkolna 20, Lublin",
+        "imageurl": "/wdd230/chamber/images/directory_images/NFZ.jpeg"
+      },
+      {
+        "name": "Ministry of Health in Lublin",
+        "address": "Jaczewskiego 2, Lublin",
+        "imageurl": "/wdd230/chamber/images/directory_images/Lublin Logo.jpeg"
+      },
+      {
+        "name": "World Health Organisation",
+        "address": "Spokojna 4, Lublin",
+        "imageurl": "/wdd230/chamber/images/directory_images/WHO.jpeg"
+      },
+      {
+        "name": "Vincent Pol University",
+        "address": "Choiny 2, Lublin",
+        "imageurl": "/wdd230/chamber/images/directory_images/VPU.jpeg"
+      },
+      {
+        "name": "Medical University",
+        "address": "Reclawickie 1, Lublin",
+        "imageurl": "/wdd230/chamber/images/directory_images/University of Medicine.jpeg"
+      },
+      {
+        "name": "Medical Tourism",
+        "address": "ul Willowa 60, Lublin",
+        "imageurl": "/wdd230/chamber/images/directory_images/Medical Tourism.jpeg"
+      },
+      {
+        "name": "Optical Centre",
+        "address": "ul. Chodzki 14, Lublin",
+        "imageurl": "/wdd230/chamber/images/directory_images/eyesOptical.jpeg"
+      }
+    ]
+}
+
+

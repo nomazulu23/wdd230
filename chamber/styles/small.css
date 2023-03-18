@@ -1,25 +1,640 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Playfair+Display:wght@400;700&display=swap");
+
 @media(max-width: 799px) {
 
-body {
-	max-width: 600px;
-	margin: 0 auto;
-	font-family: 'Playfair Display', serif;
-			
-	}
-	
-	footer {
-		display: grid;
-		grid-template-columns: 1fr;
-		grid-template-rows: 3fr 1fr;
-		justify-items: center;
-		align-items: center;
-		background-color: #3Ca9ed;
-		text-align: center;
-		font-family: "Play", sans-serif;
-		color: #ffffff;
-		padding: 0 0.5rem;
-		border: 1px solid rgba(0, 0, 0, 0.2);
+	body {
+        font-family: 'Nanum Gothic', sans-serif;
+        background-color:  #e4d9c4;
+        background: linear-gradient(90deg,#64e120a9 0%, #e4d9c4 100%, #64e120a9 100%);
+        padding: 0;
+        margin: 0;
+		color:#03066c;
+    }
+
+	h1, h2, h3{
 		font-family: 'Playfair Display', serif;
 	}
+
+	p{
+		font-family: 'Nanum Gothic', sans-serif; 
+		font-size: 15px ;
+	}
 	
+/* ____HEADER________________________________________________________________________________________________ */
+
+header { 
+	background-color: #3ca9ed ;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 200px;
+	padding: 5px 10%;
+}
+
+
+header .headerlogo {
+	display: flex;
+	display:inline;
+	cursor: pointer;
+	box-shadow: #ccc; 
+}
+
+header .headerlogo img {
+	max-width: 50%;
+	transition: all 1s;
+}
+
+header .headerlogo img:hover {
+		transform: scale(1.2);
+	}
+
+header h1{
+	color: #e4d9c4;
+}
+
+p {
+	color:#03066c;	
+}
+
+/* navigation */
+
+
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+	
+	
+nav button{
+	background: transparent;
+	border: none;
+	margin: 20px;
+	font-size: 2rem;
+	color: #3ca9ed;
+	border-radius: 50%;
+	box-shadow: #ccc; 
+	cursor: pointer;
+}
+	
+nav { 
+	background-color:#e4d9c4; 
+	display: flex;
+	justify-content:space-between
+}
+
+nav ul {
+	list-style-type: none; 
+	padding: 0;
+	margin: 0;
+}
+	
+nav ul li a{
+	display: block;
+	margin: 10px;
+	padding: 5px;
+	text-decoration: none;
+	color:  #3ca9ed;
+	border-top: 1px solid #3ca9ed;
+}
+
+#facebook,  #linkedIn {
+	display:inline-block;
+	border-radius: 50%;
+}
+
+nav p {
+	font-family: 'Nanum Gothic', sans-serif; 
+	font-size: 1.3rem;
+}
+	
+nav ul li.active a {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+	
+nav ul li a:hover {
+	background-color: #64e120a9;
+}
+	
+nav ul {display: none;}
+nav ul.open {display: block;}
+	
+/* We want the X not to appear on the side of the hamburger nav but be hidden */
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2) {display: none;}
+	
+	
+/* We want the Opposite, we want the X to appear when the hamburger nav opens */
+#hamburgerBtn.open span:nth-child(1) {display: none;}
+#hamburgerBtn.open span:nth-child(2) {display: block;}
+		
+.date {
+	background-color:#64e120a9;
+	font-family: 'Nanum Gothic', sans-serif; 
+	font-size: 1rem;
+	color: #e4d9c4;
+	text-align: center;
+	margin-top: -60px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 10px 0px 10px 0px;
+	border: 1px solid  #e4d9c4 ;
+}
+	
+
+/* _______MAIN_______________________________________________________________ */
+main{	
+	background: linear-gradient(90deg, #64e120a9  0%, #e4d9c4 100%, white 100%);
+	background-color: #e4d9c4;
+	margin: 10px;
+	color:#03066c;
+}
+
+.main_container {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(5, minmax(auto, 400px)); 
+}
+
+.event, .weather, .join, .hero, .news_release, .spotlight {
+	background-color: #e4d9c4;
+	border: 1px solid  #3ca9ed;
+}
+  
+.event {
+	grid-column: 1 / 2;
+	grid-row: 2 / 2;
+	margin: 5px;
+	width: auto;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+}
+
+/* _____________________________________________________________ */
+.weather {
+	grid-column: 1 / 2;
+	grid-row: 3 / 3;
+	margin: 5px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+  }
+
+figure {
+    background-color: #64e120a9;
+    display: inline-block;
+    padding: 0.5rem;
+    color:#03066c;
+}
+
+ /* _________________________________________________________ */ 
+
+/*Join*/
+.join {
+	grid-column: 1 / 2;
+	display: none;
+	margin: 5px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.join_btn {
+	color:#03066c;
+	display: inline-block;
+	margin: 50px;
+	background-color: #64e120a9;
+	border: 1px solid #3ca9ed;;
+	border-radius: 4px;
+	color: #101010;
+	cursor: pointer;
+
+	padding: 10px 30px;
+	text-align: center;
+	transform: translateY(0);
+}
+
+ /* __________________________________________________________ */
+  
+.hero {
+	grid-column: 1 / 2;
+	grid-row: 1 / 1;
+	margin: 5px;
+	position: relative;
+}
+
+.hero picture img{
+	width: 100%;
+	height: 390px;
+}
+
+.hero_btn{
+	position: absolute;
+	bottom: 40px;
+	right: 30px;
+	background-color: #64e120a9;
+	border: 1px solid #e4d9c4;
+	border-radius: 4px;
+	box-sizing: border-box;
+	color:#03066c;
+	cursor: pointer;
+	padding: 10px 25px;
+	text-align: center;
+	transform: translateY(0);
+}
+
+.hero_btn:hover {
+	box-shadow: rgba(0, 0, 0, .15) 0 3px 9px 0;
+	transform: translateY(-2px);
+}
+
+/* _______________________________________________________________________ */
+
+/*New release*/
+
+.news_release {
+	grid-column: 1 / 2;
+	grid-row: 3 / 3;
+	margin: 5px;
+}
+
+.news_release {
+	grid-column: 1 / 2;
+	grid-row: 4 / 4; 
+	margin: 5px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	padding: 60px;
+}
+
+.spotlight {
+	display:grid;
+	grid-column: 1 / 2;
+	margin: 5px;
+	grid-template-columns: auto;
+	grid-template-rows: auto auto;
+}
+
+.start{
+	border: 1px solid #3ca9ed;
+	padding: 5px;
+	margin: 5px;
+	grid-column: 1 / 1;
+	grid-row: 1 / 1; 
+	display: flex;
+	display:inline;
+	cursor: pointer;
+	justify-content: center;
+	align-items: center;
+	display:inline;
+	text-align: center;
+}
+
+.spotlight img {
+	max-width: 70px;
+	transition: all 1s;
+	display: flex;
+	display:inline;
+	cursor: pointer;
+}
+
+.opportunities {
+	border: 1px solid #3ca9ed;
+	grid-column: 1 / 1;
+	grid-row: 2 / 2; 
+	padding: 5px;
+	display: flex;
+	display:inline;
+	text-align: center;
+	padding: 5px;
+	margin: 5px;
+	justify-content: center;
+	align-items: center;
+}
+
+.opportunities  img {
+	max-width: 70px;
+	transition: all 1s;
+	display: flex;
+	display:inline;
+	cursor: pointer;	
+}
+
+.apply {
+	border: 1px solid #3ca9ed;
+	padding: 20px;
+	margin: 20px;
+	display: none;
+}
+
+/* ________________________________FOOTER ___________________________________________________________________________ */
+
+footer {
+	color:  #050505;
+	background-color: #3ca9ed;
+	align-items: center;
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	display: grid;	
+}
+
+.footer_container {
+	display:flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+footer  img{
+	display:inline;
+	cursor: pointer;
+	width: 90%;
+	transition: all 1s;
+	margin: 0px 0px 0px 20px;
+}
+
+footer img:hover {
+	transform: scale(1.2);
+}
+	
+main,
+footer {
+	margin: 0 auto;
+	padding: 20px; 
+	}
+
+footer p {
+	font-family: 'Playfair Display', serif; 
+	font-size: 20px;
+	text-align: center;
+	padding: 20px;
+	color:#03066c;
+}
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/*DISCOVER PAGE*/
+
+.discover_main{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin: 70px 0;
+}
+
+.picture {
+	border: 1px solid #3ca9ed;
+	width: 70%;
+	padding: 0px 0px 50px 0px;
+	margin: 20px 0;
+	background-color: #e4d9c4;
+}
+
+.picture p {
+	font-family: 'Playfair Display', serif; 
+	font-size: 20px;
+	text-align: center;
+	padding: 10px;
+}
+
+
+.picture img{
+	width:100%;
+}
+		
+/* //////////////////////////////////////////////////////////////////////////////////////// */
+
+/*  DIRECTORY PAGE  */
+
+.menu {
+	margin: 1rem auto;
+	border: 1px solid #3ca9ed;
+	padding: 5px;
+	background-color:  #e4d9c4;
+	text-align: center;
+	font-family: 'Nanum Gothic', sans-serif; 
+	font-size: 20px ;
+}
+
+.menu button {
+	padding: 2rem;
+	margin: 5px;
+	border: 1px solid #3ca9ed;
+	background-color: #64e120a9;
+	padding: 1rem;
+	font-weight: 700;
+}
+
+.menu button:hover{
+	transform: scale(1.2);
+}
+
+main #directory {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+  
+div.cards {
+	display: block;
+	align-items: center;
+	text-align: center;
+}
+  
+section{ 
+	margin-bottom: 20px;
+	padding: 20px;
+	border: 1px solid #3ca9ed;
+	background-color: #e4d9c4;
+	border-radius: 20px;
+}
+  
+.card img {
+	width: auto;
+	height: 100%;
+	max-width: 325px;
+	box-shadow: 0 0 30px #ccc;
+	border: 10px solid #3ca9ed;
+	object-fit: contain;
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	padding: 10px;
+}
+
+.list section {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	margin: 5px;
+	padding: 1rem;
+}
+
+.list section > * {
+	margin: 0 1rem;
+}
+
+.list section h2 {
+	font-size: 1.25rem;
+	font-family: 'Playfair Display', serif; 
+}
+
+.list section:nth-child(even) {
+	background-color:  #64e120a9;
+}
+
+.list section img {
+	height: 100px;
+	width: 50%; 
+	object-fit: contain;
+} 
+
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* JOIN PAGE*/
+form{
+	border: 2px solid #3ca9ed;
+	box-shadow: 0px 4px 4px 9px rgba(0,0,0,0.1);
+	width: 600px;
+	padding: 100px;
+	margin: auto;
+}
+
+form input{
+	width: 400px;
+	height: 30px;
+	border-radius: 5px;
+}
+
+form label, input{
+	margin: 5px 0;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+}
+
+form label.top input, form label.top select {
+    -webkit-appearance: none;
+    display: block;
+    font-size: 1rem;
+    border: solid 1px #999;
+    border-radius: 4px;
+    padding: .75rem;
+    color: #555;
+    width: 100%;
+    max-width: 20rem;
+    background-color: #e4d9c4;
+}
+
+form legend {
+	font-family: 'Playfair Display', serif; 
+	font-size: 1.5rem;
+	color: #0a334c;
+	margin: 0 1 rem;
+	padding: 0 .5rem;
+}
+
+form input.submitBtn {
+	font-family: 'Playfair Display', serif; 
+	font-size: 1.25rem;
+	border: none;
+	background-color:#3ca9ed;
+	color: #e4d9c4;
+	border: 2px solid #64e120a9;;
+	border-radius: 30px;
+	margin: 20px;
+	height: 50px;
+	cursor: pointer;
+	padding: 20px;
+	text-align: center;
+	transform: translateY(0);
+	justify-content: center;
+}
+
+form input.submitBtn:hover{
+	transform: scale(1.1);
+	box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+textarea{
+	width: 400px;
+	height: 100px;
+	background-color: #e4d9c4;
+
+}
+
+form label.top input:required {
+    border-left: red solid 6px;
+}
+
+form label.top input:required:valid {
+    border-left: green solid 6px;
+}
+
+fieldset {
+	border: none;
+	padding: 10px;
+  }
+ 
+
+option[selected] {
+	background-color: #e4d9c4;
+	font-weight: bold;
+  }
+
+.join_form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+} 
+  
+.side1 {
+	order: 1; 
+}
+  
+.memberInfo{
+	padding: 0px 0px 0px 50px;
+	order: 2;
+}
+
+.side1 h1{
+	justify-content: center;
+	text-align: center;
+}
+
+h3 .memberInfo {
+	font-family: 'Playfair Display', serif; 
+	font-size: 1.5rem;
+	color: #0a334c;
+	margin: 0 1 rem;
+	padding: 0 .5rem;
+}
+ 
+.side2{
+	/* list-style-type: none;  */
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1em;
+	align-items: center;
+	text-align: center;
+	width: 400px;
+  }
+
+/* THANKS HTML________________________________________ */
+
+ .thanks{
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	height:700px;
+ }
+
 }
