@@ -20,7 +20,7 @@
 		font-size: 15px ;
 	}
 	
-/* ____HEADER________________________________________________________________________________________________ */
+/* ____HEADER___________________________________________________________ */
 
 header { 
 	background-color: #3ca9ed ;
@@ -36,7 +36,6 @@ header .headerlogo {
 	display: flex;
 	display:inline;
 	cursor: pointer;
-	box-shadow: #ccc; 
 }
 
 header .headerlogo img {
@@ -72,7 +71,6 @@ nav button{
 	font-size: 2rem;
 	color: #3ca9ed;
 	border-radius: 50%;
-	box-shadow: #ccc; 
 	cursor: pointer;
 }
 	
@@ -513,7 +511,7 @@ form input{
 }
 
 form label, input{
-	margin: 5px 0;
+	margin: 5px;
 }
 
 form label.top, form div {
@@ -538,8 +536,8 @@ form legend {
 	font-family: 'Playfair Display', serif; 
 	font-size: 1.5rem;
 	color: #0a334c;
-	margin: 0 1 rem;
-	padding: 0 .5rem;
+	margin: 1rem;
+	padding: .5rem;
 }
 
 form input.submitBtn {
@@ -614,8 +612,8 @@ h3 .memberInfo {
 	font-family: 'Playfair Display', serif; 
 	font-size: 1.5rem;
 	color: #0a334c;
-	margin: 0 1 rem;
-	padding: 0 .5rem;
+	margin: .1rem;
+	padding: .5rem;
 }
  
 .side2{
@@ -636,5 +634,42 @@ h3 .memberInfo {
 	justify-content: center;
 	height:700px;
  }
+
+/* _CONTACT PAGE_____________________________________________________________________________________________ */
+
+#contact {
+	display: grid;
+	grid-template-columns: 1fr;
+  }
+  
+  #contact h3{
+	font-family: "Fira Sans", sans-serif;
+	font-size: 2rem;
+	font-weight: bolder;
+	text-align: start;
+  
+  }
+  
+  #contact h4{
+	font-family: "Fira Sans", sans-serif;
+	font-size: 1.5rem;
+	text-align: start;
+  
+  }
+  
+  
+  #contact p{
+	font-family: "Fira Sans", sans-serif;
+	font-size: 1rem;
+	text-align: start;
+	font-weight: 500;
+  }
+  
+  iframe {
+   display: block;
+   justify-self: left;
+   width: 70%;
+  }
+  
 
 }

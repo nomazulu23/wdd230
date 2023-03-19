@@ -1,6 +1,6 @@
-@media (min-width: 800px) and (max-width: 1200px) {
-
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic&family=Playfair+Display:wght@400;700&display=swap");
+
+@media (min-width: 800px) and (max-width: 1200px) {
 
 body {
 	font-family: 'Nanum Gothic', sans-serif;
@@ -34,8 +34,7 @@ header {
 header .headerlogo {
 	display: flex;
 	display:inline;
-	cursor: pointer;
-	box-shadow: #ccc; 
+	cursor: pointer; 
 }
 
 header .headerlogo img {
@@ -64,7 +63,6 @@ nav button{
 	font-size: 2rem;
 	color: #3ca9ed;
 	border-radius: 50%;
-	box-shadow: #ccc; 
 	cursor: pointer;
 }
 	
@@ -250,11 +248,11 @@ figure {
 .news_release {
 	grid-column: 1 / 4;
 	grid-row: 2 / 2; 
-	margin: 5px;
+	margin: 2px;
 	text-align: center;
 	align-items: center;
 	justify-content: center;
-	padding: 60px;
+	padding: 50px;
 }
 	  
 .spotlight {
@@ -266,13 +264,13 @@ figure {
 }
 	  
 .start{
-	border: 1px solid #3ca9ed;
+	/* border: 1px solid #3ca9ed; */
 	grid-column: 1 / 2;
 	grid-row: 1 / 1; 
-	padding: 30px;
 	display: flex;
 	display:inline;
 	text-align: center;
+	object-fit: contain;
 }
 
 .start img {
@@ -284,10 +282,9 @@ figure {
 	display: flex;
 	display:inline;
 	text-align: center;
-	border: 1px solid #3ca9ed;
 	grid-column: 2 / 2;
 	grid-row: 1 / 1; 
-	padding: 30px;
+	
 }
 
 .opportunities img {
@@ -295,12 +292,10 @@ figure {
 	transition: all 1s;	
 }
 
-.apply {
-	border: 1px solid #3ca9ed;
-	padding: 20px;
+ .apply {
 	margin: 20px;
 	display: none;
-}
+} 
 
 /* ______________________________FOOTER ___________________________________________________________________ */
 .footer_container {
@@ -520,8 +515,8 @@ form legend {
 	font-family: 'Playfair Display', serif; 
 	font-size: 1.5rem;
 	color: #0a334c;
-	margin: 0 1 rem;
-	padding: 0 .5rem;
+	margin: 1rem;
+	padding: .5rem;
 }
 
 form input.submitBtn {
@@ -601,8 +596,8 @@ option[selected] {
 	font-family: 'Playfair Display', serif; 
 	font-size: 1.5rem;
 	color: #0a334c;
-	margin: 0 1 rem;
-	padding: 0 .5rem;
+	margin: 1rem;
+	padding: .5rem;
 }
 
 .memberInfo{
@@ -629,5 +624,16 @@ option[selected] {
 	height:700px;
  }
 
+ /* CONTACT PAGE________________________________________  */
+
+ .member_box {
+	text-align: center;
+	justify-content: center;
+	margin-left: -50px;
+  }
+  
+  .member_box {
+	padding: 0px 0px 0px 100px;
+  }
 
 }

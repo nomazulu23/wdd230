@@ -46,52 +46,38 @@
         <main>
             <div class="main_container">
                 <div class="event">
-                    <!-- <p class="paragraph-text"> -->
                         <h2>Networking Event</h2>
                         <br>
                         <p class="paragraph-text">Are you a nurse of an aspiring Nurse.</p>
                         <br>
                         <p class="paragraph-text">You are cordially invited to come and join hundreds of other medical personel in exploring opportunities </p><a href="">more info ...</a>
-                    <!-- </p> -->
                 </div>
 
                 <div class="weather">
                     <div class="weather-box">
                         <h2>Weather</h2>
                         <div>
-                            <p>The current temperature in Lublin is <span id="current-temp"></span> &deg;C</p>
-                            <h2>Current Condition Icon</h2>
+                            <p>Lublin is <span id="current-temp"></span> &deg;C</p>
                             <figure>
-                                <img src="" alt="" id="weather-icon"/>
+                                <img src="" alt="" id="weather-icon">
                                 <figcaption></figcaption>
                             </figure>
                         <hr>    
-                        <p id="windspeed"> Wind-speed : km/h </p>   
+                        <p id="windspeed"> Wind-speed : km/h </p> 
+                        <p> Wind-chill: NA</p>  
                         </div>
-
-
-                        
-
-                        <!-- <i class="fa fa-thermometer-half"></i>
-                        <div class="upside-weather">
-                            <p><span id="weather-temp"></span>°C</p>
-                        </div>
-                        <p><span id="weather-desc"></span></p>
-                        <hr>
-                        <p>Wind Speed: <span id="wind-speed"></span> km/h</p>
-                        <p>Wind Chill: <span id="wind-chill"></span></p> -->
-                    </div>
+                    </div> 
                 </div>
 
                 <div class="join">
-                    <button class="join_btn"><a href="/wdd230/chamber/join.html">Join Us!</a></button>
+                    <button class="join_btn">Join Us!</button>
                     <p class="paragraph-text">Apply for nursing opportunies with the world leading organisations in matters of Health</p>
                 </div>
                 
                 <div class="hero">
                     <picture>
-                        <source media="(max-width: 800px)" src="/wdd230/chamber/images/NurseMedium.jpg">
-                        <source media="(max-width: 1200px)" src="/wdd230/chamber/images/NurseSmall.jpg">
+                        <source media="(max-width: 800px)" srcset="/wdd230/chamber/images/NurseMedium.jpg">
+                        <source media="(max-width: 1200px)" srcset="/wdd230/chamber/images/NurseSmall.jpg">
                         <img src="/wdd230/chamber/images/NurseLarge.jpeg" alt="Nurse checking drip">
                     </picture>
                     <button class="hero_btn">Hero with site name and call to action</button>
@@ -164,7 +150,7 @@
         </footer>
         
         <script src="/wdd230/chamber/scripts/script.js" async defer></script>
-        <script src="/wdd230/chamber/scripts/windchill.js" async defer></script>
+        <!-- <script src="/wdd230/chamber/scripts/windchill.js" async defer></script> -->
     </body>
 </html>
 

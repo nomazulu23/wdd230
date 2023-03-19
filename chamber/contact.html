@@ -40,9 +40,52 @@
             <span id="get_date"></span>
         </div>
 
-        <main>
-            <p> Please call us at : 0000000000000</p>
+        <main class="joinform">
+            <div class="side1">
+                <h1>Contact Form</h1>
+                <form action="thanks.html" method="get">
+                    <fieldset>
+                        <label>Name:<input type="text" name="name" required></label>
+                        <label>Email: <input type="email" name="email" placeholder="someone@gmail.com" required></label>
+                    </fieldset>
 
+                    <fieldset>
+                        <label class="top">Message <textarea
+                            name="text"
+                            id="text"
+                            rows="5"
+                            cols="50"
+                            maxlength="300"
+                            oninput="countText()"></textarea>
+                        </label>
+                        <div id="counter">
+                            <span id="character">0</span><span> / 300</span>
+                        </div>
+                    </fieldset>
+                            
+                    <input type="submit" value="Join" class="submitBtn">
+                </form>
+            </div>  
+            
+            <div class="contact_us">
+                <h1>Contact Us</h1> 
+                    <hr>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2497.9743486710004!2d22.554120099999995!3d51.2379673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47225771a3c6aae7%3A0xede1f23373f82be!2sMuzyczna%207%2C%2020-612%20Lublin!5e0!3m2!1sen!2spl!4v1679178458037!5m2!1sen!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <hr>
+                
+                    <h2>Address: </h2>
+                    <p>Muzyczna 7, 20-612, Lublin, Poland</p>
+                    <br>
+                    <h2>Phone :</h2>
+                    <p>+48 792 659 436</p>
+                    <br>
+                    <h2>Email: </h2>
+                    <p>info.nursecare@gmail.com</p>
+                    <br>
+                    <hr>
+                    <img src="/wdd230/chamber/images/heatherpic..jpeg" alt="CEO picture">
+                    <p>Heather Jasi CEO</p>
+            </div>
         </main>
 
         <footer>
