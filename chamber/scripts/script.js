@@ -10,24 +10,6 @@ const x = document.getElementById('hamburgerBtn');
 x.onclick = toggleMenu;
 
 // --------------------------------------
-// Header date
-
-//Select the HTML element to manipulate
-// const date1 = document.querySelector("#date1");
-// const message = document.querySelector("#emessage");
-
-// // Try to complete the method with options
-// try {
-// 	const options = {
-// 		month: "short",
-// 		day: "numeric",
-// 		year: "numeric"
-// 	};
-// 	date1.innerHTML = `Today is <span class="highlight">${new Date().toLocaleDateString("en-US", options)}</span>!`;
-// } catch (e) {
-// 	console.log("Error with code or your browser does not support Locale");
-// }
-
 
 let currentYear = new Date().getFullYear();
 let currentYearElement = document.getElementById("currentYear");
@@ -91,22 +73,6 @@ function displayResults(weatherData) {
     captionDesc.textContent = desc.toUpperCase();
 }
 
-// async function getWeather() {
-//   const response = await fetch("https://api.openweathermap.org/data/2.5/weather?appid=d1bf7498feb4f8b222047310ce70549e&units=metric&id=3529982");
-//   const data = await response.json();
-//   return data;
-// }
-
-// async function displayWeather() {
-//   const weatherData = await getWeather();
-
-//   document.getElementById("weather-temp").innerHTML = weatherData.main.temp;
-//   // document.getElementById("wind-chill").innerHTML = weatherData.main.humidity;
-//   document.getElementById("wind-speed").innerHTML = weatherData.wind.speed;
-//   document.getElementById("weather-desc").innerHTML = weatherData.weather[0].description;
-
-// }
-// displayWeather()
 
 // DISCOVER PAGE LAZY LOAD *****************************************************************************************
 
@@ -209,88 +175,3 @@ const displayCompanies = (companies) => {
     });
   });  
 }
-
-// JOIN PAGE**********************************************************************
-
-// // Get the select element
-// const selectBox = document.getElementById("membership-level");
-
-// // Add event listener to the select element to detect changes
-// selectBox.addEventListener("change", (event) => {
-//   // Get the selected option
-//   const selectedOption = event.target.options[event.target.selectedIndex];
-  
-//   //Remove the selected attribute from all options
-//   for (let i = 0; i < event.target.options.length; i++) {
-//     event.target.options[i].removeAttribute("selected");
-//   }
-  
-//   // Set the selected attribute to the newly selected option
-//   selectedOption.setAttribute("selected", "");
-// });
-
-// // start of the selected style
-// const selectedStyle = {
-//   borderRadius: '30%',
-//   transition: 'border-radius 1s',
-  
-// };
-
-// // Define the initial style for the unselected elements
-// const initialStyle = {
-//   borderRadius: '10px',
-//   transition: 'border-radius 1s',
-// }
-
-// // Set the selected style for the selected element
-// function setSelectedStyle(element) {
-//   element.style.borderRadius = selectedStyle.borderRadius;
-//   element.style.transition = selectedStyle.transition;
-// }
-
-// // Reset the unselected styles for the unselected elements
-// function resetUnselectedStyles(selectedElement, elements) {
-//   for (let i = 0; i < elements.length; i++) {
-//     if (elements[i] !== selectedElement) {
-//       elements[i].style.borderRadius = initialStyle.borderRadius;// indicates to reset
-//       elements[i].style.transition = initialStyle.transition;// indicates to reset
-      
-//     }
-//   }
-// }
-
-
-// const npDiv = document.getElementById('np');
-// const bronzeDiv = document.getElementById('bm');
-// const silverDiv = document.getElementById('sm');
-// const goldDiv = document.getElementById('gm');
-// const membershipDivs = [npDiv, bronzeDiv, silverDiv, goldDiv];
-
-// npDiv.addEventListener('click', () => {
-//   setSelectedStyle(npDiv);
-//   resetUnselectedStyles(npDiv, membershipDivs);
-//   const npOption = document.querySelector('#membership-level [value=NP_Membership]');
-//   npOption.selected = true;
-// });
-
-// bronzeDiv.addEventListener('click', () => {
-//   setSelectedStyle(bronzeDiv);
-//   resetUnselectedStyles(bronzeDiv, membershipDivs);
-//   const bronzeOption = document.querySelector('#membership-level [value=Bronze_Membership]');
-//   bronzeOption.selected = true;
-  
-// });
-
-// silverDiv.addEventListener('click', () => {
-//   setSelectedStyle(silverDiv);
-//   resetUnselectedStyles(silverDiv, membershipDivs);
-//   const silverOption = document.querySelector('#membership-level [value=Silver_Membership]');
-//   silverOption.selected = true;
-// });
-
-// goldDiv.addEventListener('click', () => {
-//   setSelectedStyle(goldDiv);
-//   resetUnselectedStyles(goldDiv, membershipDivs);
-//   const goldOption = document.querySelector('#membership-level [value=Gold_Membership]');
-//   goldOption.selected = true;
-// });
