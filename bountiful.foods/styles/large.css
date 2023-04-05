@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Delicious+Handrawn&family=Titan+One&display=swap");
+
+@media  (min-width: 1245px) {
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
+	header, main, footer {
+		box-shadow: 10px 8px 5px #555;
+	}
+
+
+
+	p {
+	font-weight: bold;
+	font-family: 'Caveat', cursive; 
+	font-size: 30px ;
+	
+	}
+
+	header{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr; 
+	grid-template-rows: repeat(2, minmax(auto, 200px)); 
+	gap: 2px;
+	height: 350px;
+	background-color:  #FFE9CE ;
+	margin-left: 10px;
+	margin-right: 10px;
+	font-family: 'Handrawn', cursive;
+	}
+
+	header .banner {
+	background-image: url(/wdd230/bountiful.foods/images/fruit_banner.jpg);
+	height: 250px;
+	max-width: 2000px;
+	background-size: cover;
+	grid-row: 1;
+	grid-column: 1/4; 
+	box-shadow: 2px 2px 2px #555;
+	}
+
+	h1{
+	display: flex;
+	font-family: 'Handrawn', cursive;
+	font-size: 100px;
+	font-weight: bold;
+	align-items: center;
+	justify-content: center;
+	animation: glow 1s ease-in-out infinite alternate;
+	color: #fde680;
+	border: 1px solid  #3ca9ed ;
+	margin-left: 500px;
+	margin-right: 500px; 
+	padding: 5px;
+	background-color: #97DDC8;
+	}
+
+	@keyframes glow {
+		from {
+		  text-shadow: 0 0 10px rgb(253, 192, 192);
+		}
+		to {
+		  text-shadow: 0 0 20px rgba(255, 149, 0, 0.944), 0 0 10px #f8ccd4;
+		}
+	  }
+
+    .main_nav {
+		display: flex;
+		flex-direction: column;
+		grid-column: 1/3;
+		grid-row: 2;
+		height: 50px;
+		align-items: stretch;
+		justify-content: center;
+		gap: 10px;
+
+	}
+
+	.socialmedia {
+	display: flex;	
+	flex-direction: row-reverse;
+	grid-column: 3/3;
+	grid-row: 2;
+	list-style: none;
+	height: 50px;
+	}
+
+	nav{
+		box-shadow: 2px 2px 2px #555;
+	}
+
+	nav a {
+	font-size: 1.1rem;
+	}
+
+	nav p{
+		font-family: 'Handrawn', cursive;
+	}
+
+	nav ul {
+		display: grid;
+ 		grid-template-columns: repeat(3, 1fr); 
+		list-style: none;
+		font-family: 'Handrawn', cursive;
+	} 
+
+	#social_icon {
+	border-radius: 50%;
+	justify-content: space-between;	
+	margin: 5px;
+	height: 50px;
+	width: 50px;
+	} 
+
+	.currentdate {
+		grid-column: 1 / -1;
+		grid-row: 3 / 4;
+		text-align: center;
+		margin-top: -30px;
+		margin-left: 10px;
+		margin-right: 10px; 
+		padding: 5px 0px 5px 0px;
+		background-color: #fde680;
+		text-align: center;
+		box-shadow: 2px 2px 2px #555;
+		
+	}
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Main */
+main{
+	background: linear-gradient(90deg,#97DDC8 60%, #FFE9CE 100%,  #F7C79D 100%);
+	background-color: #e4d9c4;
+	margin: 25px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+img {
+    width: 350px;
+    height: 300px;
+    box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.15);
+    margin: 25px 25px 25px 25px;
+    justify-content: center;
+     align-items: center;
+}
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr; 
+	grid-template-rows: repeat(3, minmax(auto, 500px)); 
+	max-width: 2000px; 
+	margin: 0 auto;  
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.fruit_shop, .fresh_fruits, .weather, .balboa, .home_contact{
+	border: 1px solid  #3ca9ed ;
+	min-width: 200px;
+
+}
+ 
+.fruit_shop{
+	display: flex;
+	flex-direction: column;
+	grid-column: 1/ 4; 
+	grid-row: 1 ; 
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+	height: fit-content;
+}
+
+.fresh_fruits{
+	display: inline;
+	grid-column: 1/ 4; 
+	grid-row: 2/ 3; 
+	margin: 5px;
+}
+
+.weather {
+	grid-column: 1 / 2; 
+	grid-row: 3 / 4;
+	display: flex;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+.balboa{
+	grid-column: 2 / 4; 
+	grid-row: 3 / 4;
+}
+
+.home_contact{
+	align-items: center;
+	grid-column: 1 / 4; 
+	grid-row: 4/ 5;
+
+}
+
+}
+

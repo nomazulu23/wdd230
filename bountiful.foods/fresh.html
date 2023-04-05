@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Bountiful foods</title>
+        <meta name="description" content="Site for odering fresh fruit products">
+        <link rel="icon" href="/wdd230/bountiful.foods/images/">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="/wdd230/bountiful.foods/styles/large.css">
+        <link rel="stylesheet" href="/wdd230/bountiful.foods/styles/medium.css">
+        <link rel="stylesheet" href="/wdd230/bountiful.foods/styles/small.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+        <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Delicious+Handrawn&family=Titan+One&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <div class="banner">
+                <img>
+               
+            </div>
+
+            <h1>Bountiful Goods</h1>
+            
+            <nav>      
+                    <li ><a href="index.html"><p>Home</p></a></li>
+                    <li class = "active"><a href="/wdd230/bountiful.foods/fresh.html"><p>Fresh</p></a></li>
+                    <li><a href="/wdd230/bountiful.foods/aboutus.html"><p >About Us</p></a></li>
+
+                    <li><a href="https://www.facebook.com/"><img id = "facebook" src="/wdd230/bountiful.foods/images/" alt="Facebook"></a></li>
+                    <li><a href="https://www.instagram.com/"><img id = "linkedIn" src="/wdd230/bountiful.foods/images/"  alt="Instagram"></a></li>
+                    <li><a href="https://www.whatsapp.com/"><img id = "linkedIn" src="/wdd230/bountiful.foods/images/"  alt="WhatsApp"></a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="date">
+            <span id="get_date"></span>
+        </div>
+
+        <main class="form">
+            <div>
+                <h1> Make your Juice</h1>
+                <form>
+                    <fieldset>
+                        <legend>Make your Juice</legend>
+                        <hr>
+                        <label>First Name*<input type="text" name="fname" required></label>
+                        <label>Surname Name*<input type="text" name="fname" required></label>
+                        <label>Email<input type="text" name="fname" required></label>
+                        <label>Phone Number<input type="text" name="fname" required></label>
+                        <label>Select Fruits<input type="text" name="fname" required></label>
+                        <select>
+                            <option>1</option>
+                        </select>
+                        
+                        <label class="top" for="text">Specifications <textarea
+                            name="text"
+                            id="text"
+                            rows="5"
+                            cols="50"
+                            maxlength="300"
+                            oninput="countText()"></textarea>
+                            </label>
+                  
+                            <div id="counter">
+                              <span id="character">0</span><span> / 300</span>
+                            </div>
+                    </fieldset>
+
+                    <input type="hidden" id="form-load-time" name="form-load-time" value="">
+                    <input type="submit" value="Join" class="submitBtn">
+
+                </form>
+            </div>
+            
+        </main>
+
+        <footer>
+            <p>&copy;<span id="year"></span> .:|:. Heather Jasi .:|:. Bountiful Foods .:|:. Lublin 
+                <br>
+                <span id="date"></span></p>
+        </footer>
