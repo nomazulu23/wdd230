@@ -11,51 +11,41 @@
 		box-shadow: 10px 8px 5px #555;
 	}
 
-
-
-	p {
-	font-weight: bold;
-	font-family: 'Caveat', cursive; 
-	font-size: 30px ;
-	
-	}
-
 	header{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr; 
 	grid-template-rows: repeat(2, minmax(auto, 200px)); 
 	gap: 2px;
 	height: 350px;
-	background-color:  #FFE9CE ;
+	background-color:  white ;
 	margin-left: 10px;
 	margin-right: 10px;
+	margin-bottom: 20px;
 	font-family: 'Handrawn', cursive;
 	}
 
 	header .banner {
-	background-image: url(/wdd230/bountiful.foods/images/fruit_banner.jpg);
+	background-image: url(/wdd230/bountiful.foods/images/fruits4.jpg);
 	height: 250px;
 	max-width: 2000px;
 	background-size: cover;
 	grid-row: 1;
 	grid-column: 1/4; 
-	box-shadow: 2px 2px 2px #555;
+	/* box-shadow: 2px 2px  #555; */
 	}
 
 	h1{
 	display: flex;
+	flex-direction: row-reverse;
 	font-family: 'Handrawn', cursive;
 	font-size: 100px;
 	font-weight: bold;
-	align-items: center;
-	justify-content: center;
+	justify-content: center; 
 	animation: glow 1s ease-in-out infinite alternate;
-	color: #fde680;
-	border: 1px solid  #3ca9ed ;
-	margin-left: 500px;
-	margin-right: 500px; 
+	color: #780505;
+	margin-left: 800px;
+	margin-right: 200px; 
 	padding: 5px;
-	background-color: #97DDC8;
 	}
 
 	@keyframes glow {
@@ -65,8 +55,8 @@
 		to {
 		  text-shadow: 0 0 20px rgba(255, 149, 0, 0.944), 0 0 10px #f8ccd4;
 		}
-	  }
-
+	}
+/* _____________________________________________________________________________ */
     .main_nav {
 		display: flex;
 		flex-direction: column;
@@ -76,9 +66,40 @@
 		align-items: stretch;
 		justify-content: center;
 		gap: 10px;
-
+		align-items: center;
 	}
 
+	nav ul li a {
+		display: block;
+		margin: 10px;
+		padding: 5px;
+		font-size: 1.1rem;
+		align-items: center;
+		transition: all 1s;
+		color: #780505; 
+	}
+
+	nav p{
+		color: #780505; 
+		font-family: 'Handrawn', cursive;
+	}
+
+	nav ul {
+		display: grid;
+		align-items: center;
+ 		grid-template-columns: repeat(3, 1fr); 
+		list-style: none;
+		font-family: 'Handrawn', cursive;
+		padding: 0;
+		margin: 0;
+	} 
+		
+	nav ul li a:hover {
+		color: #97ddc8;
+		transition: all 1s;
+		transform: scale(1.2);
+	}
+/* _______________________________________________________________________ */
 	.socialmedia {
 	display: flex;	
 	flex-direction: row-reverse;
@@ -88,25 +109,6 @@
 	height: 50px;
 	}
 
-	nav{
-		box-shadow: 2px 2px 2px #555;
-	}
-
-	nav a {
-	font-size: 1.1rem;
-	}
-
-	nav p{
-		font-family: 'Handrawn', cursive;
-	}
-
-	nav ul {
-		display: grid;
- 		grid-template-columns: repeat(3, 1fr); 
-		list-style: none;
-		font-family: 'Handrawn', cursive;
-	} 
-
 	#social_icon {
 	border-radius: 50%;
 	justify-content: space-between;	
@@ -115,28 +117,49 @@
 	width: 50px;
 	} 
 
-	.currentdate {
+	.socialmedia ul li a:hover{
+		color: #97ddc8;
+		transition: all 1s;
+		transform: scale(1.2);
+	}
+/* _________________________________________________________________________________ */
+	.date {
 		grid-column: 1 / -1;
 		grid-row: 3 / 4;
-		text-align: center;
 		margin-top: -30px;
 		margin-left: 10px;
-		margin-right: 10px; 
 		padding: 5px 0px 5px 0px;
 		background-color: #fde680;
 		text-align: center;
 		box-shadow: 2px 2px 2px #555;
-		
+		font-size: 1.3rem;
+		color:#780505; 
+		font-family: 'Titan', cursive;
 	}
 /* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* Main */
 main{
-	background: linear-gradient(90deg,#97DDC8 60%, #FFE9CE 100%,  #F7C79D 100%);
-	background-color: #e4d9c4;
+	/* background: linear-gradient(90deg, #ffe9ce 60%, #FFE9CE 100%,  #F7C79D 100%); */
 	margin: 25px;
 	margin-left: 10px;
 	margin-right: 10px;
 }
+
+h2, h3{
+	font-weight: bold;
+	font-family: 'Titan', cursive;
+	font-size: 40px ;
+	color: #780505; 
+}
+
+p {
+	font-weight: bold;
+	font-family: 'Caveat', cursive; 
+	font-size: 30px ;
+	/* color: #780505;  */
+	color: black;
+	
+	}
 
 img {
     width: 350px;
@@ -144,7 +167,7 @@ img {
     box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.15);
     margin: 25px 25px 25px 25px;
     justify-content: center;
-     align-items: center;
+    align-items: center;
 }
 .container {
 	display: grid;
@@ -156,7 +179,7 @@ img {
 	margin-right: 10px;
 }
 
-.fruit_shop, .fresh_fruits, .weather, .balboa, .home_contact{
+ .fresh_fruits, .weather, .balboa, .home_contact{
 	border: 1px solid  #3ca9ed ;
 	min-width: 200px;
 
@@ -170,14 +193,52 @@ img {
 	text-align: center;
 	align-items: center;
 	justify-content: center;
-	height: fit-content;
+	margin-right: 450px;
+	margin-left: 450px;
+	margin-top: 100px;
+	margin-bottom: 20px;
+	max-width: 800px;
 }
+
+picture img {
+	width: 100%;
+	height: 400px;
+}
+
+.buybtn {
+	color: #780505;
+	/* bottom: 40px;
+	left: 30px; */
+	background-color:  #97ddc8;
+	border: 1px solid #e4d9c4;
+	border-radius: 4px;
+	box-sizing: border-box; 
+	cursor: pointer;
+	padding: 10px 25px;
+	text-align: center;
+	transform: translateY(0);
+	font-family: 'Handrawn', cursive;
+	}
+
+	.buybtn:hover {
+	transform: translateY(-2px);
+	}
 
 .fresh_fruits{
 	display: inline;
 	grid-column: 1/ 4; 
 	grid-row: 2/ 3; 
 	margin: 5px;
+	background-color: #97ddc8;
+	box-shadow: 2px 2px 2px #555;
+	margin-right: 50px;
+	margin-left: 50px;
+	margin-top: 100px;
+	margin-bottom: 20px;
+}
+
+.fresh_fruits h2{
+	text-align: center;
 }
 
 .weather {
@@ -187,18 +248,222 @@ img {
 	text-align: center;
 	align-items: center;
 	justify-content: center;
+	background-color: #fde680;
+	box-shadow: 2px 2px 2px #555;
+	margin-right: 20px;
+	margin-left: 50px;
+	margin-bottom: 20px;
 }
 
 .balboa{
 	grid-column: 2 / 4; 
 	grid-row: 3 / 4;
+	background-color: #fde680;
+	box-shadow: 2px 2px 2px #555;
+	margin-right: 50px;
+	margin-bottom: 20px;
+	text-align: center;
+	justify-content: center;
+
 }
 
 .home_contact{
 	align-items: center;
 	grid-column: 1 / 4; 
 	grid-row: 4/ 5;
+	background-color: #FFE9CE;
+	margin-right: 600px;
+	margin-left: 600px;
+	margin-bottom: 20px;
+	text-align: center;
 
+}
+
+footer{
+	background-color: #fde680;
+	margin-left: 10px;
+	margin-right: 10px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	box-shadow: 2px 2px 2px #555;
+	height: 50px;
+}
+
+footer p{
+	font-size: 1.3rem;
+	color:#780505; 
+	font-family: 'Handrawn', cursive;
+	
+	 
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////// */
+/* Fresh page */
+
+form{
+	border: 2px solid #3ca9ed;
+	box-shadow: 0px 4px 4px 9px rgba(0,0,0,0.1);
+	width: 600px;
+	padding: 100px;
+	margin: auto;
+	background-color: #f8ccd4;
+	margin-bottom: 20px;
+}
+.form h2{
+	text-align: center;
+	margin-bottom: 5px;
+}
+
+form input{
+	width: 400px;
+	height: 30px;
+	border-radius: 10px;
+}
+
+form label, input{
+	margin: 10px 0;
+}
+
+form label.top, form div {
+    display: block;
+    padding-top: 1rem;
+}
+
+form label{
+	font-family: 'Handrawn', cursive; 
+	color: #780505;
+}
+
+ form label input, form label select {
+    -webkit-appearance: none;
+    font-size: 1rem;
+    border: solid 1px #999;
+    padding: .75rem;
+    color: #555;
+    background-color: #fde680; 
+} 
+
+form legend {
+	text-align: center;
+	font-family: 'Handrawn', cursive; 
+	font-size: 1.5rem;
+	color: #780505;
+	margin: .1rem;
+	padding: 0.5rem;
+}
+
+form input.submitBtn {
+	font-family: 'Handrawn', cursive; 
+	font-size: 1.5rem;
+	border: none;
+	background-color: #97ddc8 ;
+	color: #780505;
+	border-radius: 30px;
+	margin: 20px;
+	height: 50px;
+	cursor: pointer;
+	text-align: center;
+	transform: translateY(0);
+	justify-content: center;
+	box-shadow: 10px 8px 5px #555;
+}
+
+form input.submitBtn:hover{
+	transform: scale(1.1);
+	box-shadow: 0px 1px 1px 1px rgba(0,0,0,0.1);
+}
+
+textarea{
+	width: 400px;
+	height: 100px;
+	background-color: #fde680;
+
+}
+
+form label input:required {
+    border-left: red solid 6px;
+}
+
+form label input:required:valid {
+    border-left: green solid 6px;
+}
+
+fieldset {
+	border: none;
+	padding: 10px;
+  }
+ 
+
+option[selected] {
+	background-color: #e4d9c4;
+	font-weight: bold;
+  }
+
+.form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+} 
+
+/* ////////////////////////////////////////////////////////////// */
+/* About Us */
+
+.us_container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr; 
+	grid-template-rows: repeat(4, minmax(auto, 400px)); 
+	max-width: 2000px; 
+	margin: 0 auto;  
+	margin-left: 10px;
+	margin-right: 10px;
+	border: 2px solid #3ca9ed;
+}
+
+.leaders{
+	display: grid;
+	grid-column: 1/4;
+	grid-row: 1/2;
+	border: 2px solid #3ca9ed;
+	text-align: center;
+}
+
+.hierachy{
+	grid-template-columns: 1fr 1fr 1fr; 
+	grid-template-rows: repeat(2, minmax(auto, 400px)); 
+} 
+
+.hierachy #cfo{
+	grid-column: 1;
+	grid-row: 2;
+}
+
+.hierachy #ceo{
+	grid-column: 2;
+	grid-row: 1;
+}
+
+.hierachy #cto{
+	grid-column: 3;
+	grid-row: 2;
+}
+
+.info{
+	grid-column: 1/4;
+	grid-row: 3;
+	border: 2px solid #3ca9ed;
+}
+
+.contact{
+	grid-column: 1/2;
+	grid-row: 4;
+	border: 2px solid #3ca9ed;
+}
+
+.map{
+	grid-column: 2/4;
+	grid-row: 4;
+	border: 2px solid #3ca9ed;
 }
 
 }

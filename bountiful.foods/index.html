@@ -38,23 +38,31 @@
                 <li><a href="https://www.pinterest.com/"><img id ="social_icon" src="/wdd230/bountiful.foods/images/pinterest.png"  alt="WhatsApp"></a></li>
             </ul>
 
-            <p class="currentdate"></p> 
+            <div class="date">
+                <span id="get_date"></span>
+            </div>
         </header>
 
 
 
         <main class="container">
+
             <div class="fruit_shop">
                 <h2> Fruit Shop</h2>
-                <img src="/wdd230/bountiful.foods/images/buynow.jpg" alt="">
-                <button> Buy Now!</button>
+                <picture>
+                    <source media="(max-width: 800px)" srcset="/wdd230/bountiful.foods/images/shop2.jpg.">
+                    <source media="(max-width: 1200px)" srcset="/wdd230/bountiful.foods/images/shop2.jpg">
+                    <img src="/wdd230/bountiful.foods/images/shop2.jpg" alt="Fruits">
+                </picture>
+                <button class="buybtn"> Buy Now!</button>
             </div>
 
             <div class="fresh_fruits">
                 <h2> Fresh Fruits</h2>
-                <img class="order" src="/wdd230/bountiful.foods/images/order.jpg">
-                <img class="fresh" src="/wdd230/bountiful.foods/images/fresh.jpg">
-                <img class="shop" src="/wdd230/bountiful.foods/images/shop.jpg">
+                <img class="order" src="/wdd230/bountiful.foods/images/berries.jpg">
+                <img class="fresh" src="/wdd230/bountiful.foods/images/combo.jpg">
+                <img class="shop" src="/wdd230/bountiful.foods/images/juices.jpg">
+                <img src="/wdd230/bountiful.foods/images/juicyfruits.jpg" alt="">
             </div>
 
             <div class="weather">
@@ -85,3 +93,8 @@
                 <br>
                 <span id="date"></span></p>
         </footer>
+
+        <script src="/wdd230/bountiful.foods/script.js" async defer></script>
+       
+    </body>
+</html>       

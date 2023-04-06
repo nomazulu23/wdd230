@@ -17,46 +17,54 @@
 
     <body>
         <header>
-            <div class="banner">
-                <img>
-               
+            <div class ="banner">
+                <h1>Bountiful Foods</h1> 
             </div>
 
-            <h1>Bountiful Goods</h1>
-            
-            <nav>      
-                    <li ><a href="index.html"><p>Home</p></a></li>
-                    <li class = "active"><a href="/wdd230/bountiful.foods/fresh.html"><p>Fresh</p></a></li>
+
+            <!-- <button id="menuButton">&#9776;</button> -->
+            <nav class="main_nav">  
+                <ul>  
+                    <li class = "active"><a href="index.html"><p>Home</p></a></li>
+                    <li><a href="/wdd230/bountiful.foods/fresh.html"><p>Fresh</p></a></li>
                     <li><a href="/wdd230/bountiful.foods/aboutus.html"><p >About Us</p></a></li>
+                 </ul>
+            </nav>  
 
-                    <li><a href="https://www.facebook.com/"><img id = "facebook" src="/wdd230/bountiful.foods/images/" alt="Facebook"></a></li>
-                    <li><a href="https://www.instagram.com/"><img id = "linkedIn" src="/wdd230/bountiful.foods/images/"  alt="Instagram"></a></li>
-                    <li><a href="https://www.whatsapp.com/"><img id = "linkedIn" src="/wdd230/bountiful.foods/images/"  alt="WhatsApp"></a></li>
-                </ul>
-            </nav>
+            <ul class="socialmedia">
+                <li><a href="https://www.facebook.com/"><img id ="social_icon" src="/wdd230/bountiful.foods/images/facebook...jpg" alt="Facebook"></a></li>
+                <li><a href="https://www.instagram.com/"><img id ="social_icon" src="/wdd230/bountiful.foods/images/instagram.png"  alt="Instagram"></a></li>
+                <li><a href="https://www.whatsapp.com/"><img id ="social_icon" src="/wdd230/bountiful.foods/images/whatsApp.png"  alt="WhatsApp"></a></li>
+                <li><a href="https://www.pinterest.com/"><img id ="social_icon" src="/wdd230/bountiful.foods/images/pinterest.png"  alt="WhatsApp"></a></li>
+            </ul>
+
+            <div class="date">
+                <span id="get_date"></span>
+            </div>
         </header>
-
-        <div class="date">
-            <span id="get_date"></span>
-        </div>
 
         <main class="form">
             <div>
-                <h1> Make your Juice</h1>
+                <h2> Order your juices</h2>
                 <form>
                     <fieldset>
                         <legend>Make your Juice</legend>
-                        <hr>
+                        
                         <label>First Name*<input type="text" name="fname" required></label>
                         <label>Surname Name*<input type="text" name="fname" required></label>
                         <label>Email<input type="text" name="fname" required></label>
-                        <label>Phone Number<input type="text" name="fname" required></label>
-                        <label>Select Fruits<input type="text" name="fname" required></label>
+                        <label>Phone Number<input type="text" name="fname"></label>
+                        <label>Select Fruits
                         <select>
+                            <option value=""> Please Select </option>
                             <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
                         </select>
-                        
-                        <label class="top" for="text">Specifications <textarea
+                        </label>
+
+                        <label class="top" for="text">Your Juice Specifications <textarea
                             name="text"
                             id="text"
                             rows="5"
@@ -71,7 +79,7 @@
                     </fieldset>
 
                     <input type="hidden" id="form-load-time" name="form-load-time" value="">
-                    <input type="submit" value="Join" class="submitBtn">
+                    <input type="submit" value="Order" class="submitBtn">
 
                 </form>
             </div>
@@ -83,3 +91,8 @@
                 <br>
                 <span id="date"></span></p>
         </footer>
+
+        <script src="/wdd230/bountiful.foods/script.js" async defer></script>
+       
+    </body>
+</html>       

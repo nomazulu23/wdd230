@@ -17,43 +17,53 @@
 
     <body>
         <header>
-            <div class="banner">
-                <img>
-               
+            <div class ="banner">
+                <h1>Bountiful Foods</h1> 
             </div>
 
-            <h1>Bountiful Goods</h1>
-            
-            <nav>      
-                    <li ><a href="index.html"><p>Home</p></a></li>
-                    <li ><a href="/wdd230/bountiful.foods/fresh.html"><p>Fresh</p></a></li>
-                    <li class = "active"><a href="/wdd230/bountiful.foods/aboutus.html"><p >About Us</p></a></li>
 
-                    <li><a href="https://www.facebook.com/"><img id = "facebook" src="/wdd230/bountiful.foods/images/" alt="Facebook"></a></li>
-                    <li><a href="https://www.instagram.com/"><img id = "linkedIn" src="/wdd230/bountiful.foods/images/"  alt="Instagram"></a></li>
-                    <li><a href="https://www.whatsapp.com/"><img id = "linkedIn" src="/wdd230/bountiful.foods/images/"  alt="WhatsApp"></a></li>
-                </ul>
-            </nav>
+            <!-- <button id="menuButton">&#9776;</button> -->
+            <nav class="main_nav">  
+                <ul>  
+                    <li class = "active"><a href="index.html"><p>Home</p></a></li>
+                    <li><a href="/wdd230/bountiful.foods/fresh.html"><p>Fresh</p></a></li>
+                    <li><a href="/wdd230/bountiful.foods/aboutus.html"><p >About Us</p></a></li>
+                 </ul>
+            </nav>  
+
+            <ul class="socialmedia">
+                <li><a href="https://www.facebook.com/"><img id ="social_icon" src="/wdd230/bountiful.foods/images/facebook...jpg" alt="Facebook"></a></li>
+                <li><a href="https://www.instagram.com/"><img id ="social_icon" src="/wdd230/bountiful.foods/images/instagram.png"  alt="Instagram"></a></li>
+                <li><a href="https://www.whatsapp.com/"><img id ="social_icon" src="/wdd230/bountiful.foods/images/whatsApp.png"  alt="WhatsApp"></a></li>
+                <li><a href="https://www.pinterest.com/"><img id ="social_icon" src="/wdd230/bountiful.foods/images/pinterest.png"  alt="WhatsApp"></a></li>
+            </ul>
+
+            <div class="date">
+                <span id="get_date"></span>
+            </div>
+        </header>
         </header>
 
         <div class="date">
             <span id="get_date"></span>
         </div>
 
-        <main>
-            <div>
+        <main class="us_container">
+            <div class="leaders">
                 <h2>Our Company</h2>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+                <div class="hierachy">
+                    <img id="cfo" src="/wdd230/bountiful.foods/images/ntoe.jpg" alt="CFO-chief financial officer">
+                    <img id="ceo" src="/wdd230/bountiful.foods/images/hlasto.jpg" alt="CEO-chief executive office">
+                    <img id="cto" src="/wdd230/bountiful.foods/images/noe.jpg" alt="CTO-chief technology officer">
+                </div>
             </div>
 
-            <div>
+            <div class="info">
                 <h2>About Us</h2>
                 <p>   </p>
             </div>
 
-            <div>
+            <div class="contact">
                 <h2>Contact Us!</h2>
                 <p>Call us: +48 792659436 </p>
                 <p>Emails us: bountifulfood@gmail.com</p>
@@ -63,7 +73,7 @@
                 <p>Facebook</p>
             </div>
 
-            <div>
+            <div class="map"> 
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2497.9743486710004!2d22.554120099999995!3d51.2379673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47225771a3c6aae7%3A0xede1f23373f82be!2sMuzyczna%207%2C%2020-612%20Lublin!5e0!3m2!1sen!2spl!4v1679178458037!5m2!1sen!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
@@ -75,3 +85,8 @@
                 <br>
                 <span id="date"></span></p>
         </footer>
+
+        <script src="/wdd230/bountiful.foods/script.js" async defer></script>
+       
+    </body>
+</html>       
