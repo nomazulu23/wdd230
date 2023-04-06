@@ -20,11 +20,13 @@ img.setAttribute('id', 'weather-icon');
 const weather = document.querySelector('#weather');
 weather.append(img);
 const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('#status');
+const captionDesc = document.querySelector('#caption');
 const windChill = document.querySelector('.wind-chill');
-const cityName = "Salvador,br";
-const apiID = "a321a24880d341ec1049227f82a34540";
+const cityName = "Carlsbad";
+const apiID = "16f4d171d38bf7f4ff88a2c6f63eb5b3";
 const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiID}&units=imperial`;
+
+
 
 async function apiFetch() {
     try {
@@ -67,3 +69,4 @@ function displayResults(weatherData) {
     }
     windSpeed.innerHTML = speed;
 }
+// __________________________________________________________________
