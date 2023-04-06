@@ -61,9 +61,11 @@ async function apiFetch() {
   
   apiFetch();
 
+  const callFuncEachMin = setInterval(apiFetch, 8000);
+
 function displayResults(weatherData) {
     currentTemp.innerHTML = `<strong>${weatherData.main.temp.toFixed(0)}</strong>`;
-  
+    const temp = weatherData.main.temp.toFixed(0)
     const iconsrc = `https://openweathermap.org/img/w/${weatherData.weather[0].icon}.png`;
     const desc = weatherData.weather[0].description;
     const speed = weatherData.wind.speed.toFixed(0);
@@ -71,6 +73,18 @@ function displayResults(weatherData) {
     weatherIcon.setAttribute('src', iconsrc);
     weatherIcon.setAttribute('alt', desc);
     captionDesc.textContent = desc.toUpperCase();
+
+    if (temp <= 50 && speed > 3) {
+        const windChillFahrenheit = 35.74 + (0.6215 * temp) + (0.4275 * temp - 35.75)  *  speed ^ 0.16;
+
+        console.log(windChillFahrenheit)
+        windChill.innerHTML = windChillFahrenheit;
+
+    } else {
+        na = "N/A";
+        windChill.innerHTML = na;
+    }
+    windSpeed.innerHTML = speed;
 }
 
 
