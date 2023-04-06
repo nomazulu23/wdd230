@@ -70,3 +70,111 @@ function displayResults(weatherData) {
     windSpeed.innerHTML = speed;
 }
 // __________________________________________________________________
+// Images lazy load
+//Get all imgs with data-src attribute
+let imagesToLoad = document.querySelectorAll("img[data-src]");
+//optional parameters being set for the intersectionalObserver
+const imgOptions = {
+    threshold: 0,
+    rootMargin: "0px 0px 50px 0px"
+};
+
+const loadImages = (image) => {
+    image.setAttribute("src", image.getAttribute("data-src"));
+    image.onload = () => {
+        image.removeAttribute("data-src");
+    };
+};
+
+// first check to see if Intersection Observer is supported
+if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((items, observer) => {
+        items.forEach((item) => {
+            if (item.isIntersecting) {
+                loadImages(item.target);
+                observer.unobserve(item.target);
+            }
+        });
+    }, imgOptions);
+
+
+//loop through each img on check statu    
+imagesToLoad.forEach((img) => {
+        observer.observe(img);
+    });
+} 
+ 
+else { //just load all images if not supported
+    imagesToLoad.forEach((img) => {
+        loadImages(img);
+    });
+}
+// ________________________________________________________________________________________
+const new_url = 'fresh.json';
+
+// If it checks out, comment out the console line and call a new function that will loop through the prophet records and build an HTML card for each one. If you run this code it will error because we have not built the displayProphets function.
+async function getCompanyData(new_url) {
+const response = await fetch(new_url);
+const fresh = await response.json();
+console.log(fresh.fruits);
+displayCompanies(fresh.fruits);
+}
+
+getCompanyData(new_url);
+// Function to display the prophet cards
+const displayCompanies = (fruits) => {
+    // Create elements to add to the div.cards element
+    const cards = document.querySelector('div.cards');
+
+    
+    fruits.forEach((fruit) => {
+    let card = document.createElement('select');
+    let family= document.createElement('h2');
+    let name= document.createElement('h3')
+    let genus= document.createElement('h4')
+    let order= document.createEment('p')
+    let nutrition = document.createElement('p');
+    
+    family.textContent = `${fruit.family}`;
+    name.textContent = fruit.name ;
+    genus.textContent = `${fruit.genus}`;
+    order.textContent= `${fruit.order}`
+    nutrition.textContent= `${fruit.nutrition}`
+    id.textContent = `${fruit.id}`
+    
+
+    // portrait.setAttribute('src', fruit.imageurl);
+    portrait.setAttribute('alt', `Portrait of ${fruit.name} ${fruit.genus}`);
+    portrait.setAttribute('loading', 'lazy');
+    portrait.setAttribute('width', '340');
+    portrait.setAttribute('height', '440');
+   
+
+    card.appendChild(family);
+    card.appendChild(genus);
+    card.appendChild(order);
+    card.appendChild(nutrition);
+    card.appendChild(id);
+    cards.appendChild(card);
+    card.appendChild(portrait);
+
+
+//     const gridbutton = document.querySelector("#grid");
+      
+      
+//     const listbutton = document.querySelector("#list");
+
+//     gridbutton.addEventListener("click", () => {
+//       // example using arrow function
+//       cards.classList.add("cards");
+//       cards.classList.remove("list");
+//   });
+
+//   listbutton.addEventListener("click", () => {
+//       // example using arrow function
+//       cards.classList.add("list");
+//       cards.classList.remove("cards");
+
+//     });
+  });  
+}
