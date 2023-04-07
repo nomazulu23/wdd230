@@ -110,6 +110,18 @@ else { //just load all images if not supported
     });
 }
 // ________________________________________________________________________________________
+// Menu
+function toggleMenu() {
+    document.getElementById("#main_nav").classList.toggle("open");
+    document.getElementById("#menuButton").classList.toggle("open");
+  }
+  
+  const x = document.getElementById('menuButton');
+  x.onclick = toggleMenu;
+  
+
+// ______________________________________________________________________________________
+
 const new_url = 'fresh.json';
 
 // If it checks out, comment out the console line and call a new function that will loop through the prophet records and build an HTML card for each one. If you run this code it will error because we have not built the displayProphets function.
@@ -158,23 +170,8 @@ const displayCompanies = (fruits) => {
     cards.appendChild(card);
     card.appendChild(portrait);
 
-
-//     const gridbutton = document.querySelector("#grid");
-      
-      
-//     const listbutton = document.querySelector("#list");
-
-//     gridbutton.addEventListener("click", () => {
-//       // example using arrow function
-//       cards.classList.add("cards");
-//       cards.classList.remove("list");
-//   });
-
-//   listbutton.addEventListener("click", () => {
-//       // example using arrow function
-//       cards.classList.add("list");
-//       cards.classList.remove("cards");
-
-//     });
   });  
 }
+// _________________________________________________
+
+

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Caveat&family=Delicious+Handrawn&family=Titan+One&display=swap");
 
-@media  (min-width: 1245px) {
+@media (min-width: 1245px) {
 	* {
 		box-sizing: border-box;
 		margin: 0;
@@ -57,8 +57,12 @@
 		  text-shadow: 0 0 20px rgba(255, 149, 0, 0.944), 0 0 10px #f8ccd4;
 		}
 	}
+
+	header button {
+		display: none;
+	}
 /* _____________________________________________________________________________ */
-    .main_nav {
+    .navigation {
 		display: flex;
 		flex-direction: column;
 		grid-column: 1/3;
@@ -110,7 +114,7 @@
 	height: 50px;
 	}
 
-	#social_icon {
+	.social_icon {
 	border-radius: 50%;
 	justify-content: space-between;	
 	margin: 5px;
@@ -159,7 +163,6 @@ p {
 	font-size: 30px ;
 	/* color: #780505;  */
 	color: black;
-	
 	}
 
 img {
@@ -176,21 +179,11 @@ img {
 	grid-template-columns: 1fr 1fr 1fr; 
 	grid-template-rows: repeat(3, minmax(auto, 500px)); 
 	max-width: 2000px; 
-	/* margin: 0 auto;  */
 	background-color: floralwhite; 
-	/* margin-left: 10px;
-	margin-right: 10px; */
 	margin-left: 150px;
 	margin-right: 150px;
 }
 
- /* .fresh_fruits, .weather, .balboa, .home_contact{
-	border: 1px solid  #3ca9ed ;
-	min-width: 200px;
-	box-shadow: 10px 8px 5px #555; */
-
-}
- 
 .fruit_shop{
 	display: flex;
 	flex-direction: column;
@@ -204,7 +197,6 @@ img {
 	margin-top: 100px;
 	margin-bottom: 20px;
 	max-width: 800px;
-	
 }
 
 picture img {
@@ -214,8 +206,6 @@ picture img {
 
 .buybtn {
 	color: #780505;
-	/* bottom: 40px;
-	left: 30px; */
 	background-color:  #97ddc8;
 	border: 1px solid #e4d9c4;
 	border-radius: 4px;
@@ -226,7 +216,6 @@ picture img {
 	transform: translateY(0);
 	font-family: 'Handrawn', cursive;
 	box-shadow: 10px 8px 5px #555;
-	
 	}
 
 	.buybtn:hover {
@@ -239,7 +228,6 @@ picture img {
 	grid-row: 2/ 3; 
 	margin: 5px;
 	background-color: #97ddc8;
-	/* box-shadow: 10px 8px 5px #555; */
 	margin-right: 50px;
 	margin-left: 50px;
 	margin-top: 100px;
@@ -253,7 +241,6 @@ picture img {
 .weather {
 	grid-column: 1 / 2; 
 	grid-row: 3 / 4;
-	/* display: flex; */
 	text-align: center;
 	align-items: center;
 	justify-content: center;
@@ -322,9 +309,7 @@ footer{
 footer p{
 	font-size: 1.3rem;
 	color:#780505; 
-	font-family: 'Titan', cursive;
-	
-	 
+	font-family: 'Titan', cursive; 
 }
 
 /* ////////////////////////////////////////////////////////////////////////////////// */
@@ -336,14 +321,12 @@ footer p{
 }
 
 form{
-	border: 2px solid #3ca9ed;
 	box-shadow: 0px 4px 4px 9px rgba(0,0,0,0.1);
 	width: 600px;
 	padding: 100px;
 	margin: auto;
 	background-color: #f8ccd4;
 	margin-bottom: 20px;
-	
 }
 .form h2{
 	text-align: center;
@@ -371,7 +354,7 @@ form label{
 }
 
  form label input, form label select {
-    -webkit-appearance: none;
+    /* -webkit-appearance: none; */
     font-size: 1rem;
     border: solid 1px #999;
     padding: .75rem;
@@ -456,7 +439,6 @@ body{
 	margin-left: 150px;
 	margin-right: 150px;
 	box-shadow: 10px 8px 5px #555;
-	border: 2px solid #3ca9ed;
 }
 
 .leaders{
@@ -491,21 +473,10 @@ body{
 #ceo{
 	grid-column: 2;
 	grid-row: 1;
-	/* justify-content: center; */
-	/* align-content: center;  */
 	box-shadow: 10px 8px 5px #555;
 	padding: 5px; 
-	/* border: 10px; */
-	/* margin: 10px; */
 	background-color: aliceblue;
 }
-
-/* .ceo{
-	margin-top: 200px;
-	grid-column: 3;
-	grid-row: 1;
-	margin-left: 20px;
-} */
 
 #cto{
 	grid-column: 3;
@@ -526,7 +497,6 @@ figcaption{
 .info{
 	grid-column: 1/4;
 	grid-row: 3;
-	border: 2px solid #3ca9ed;
 	text-align: center;
 	margin-left: 50px;
 	margin-right: 50px;
@@ -547,9 +517,7 @@ figcaption{
 	grid-column: 1/2;
 	grid-row: 4;
 	box-shadow: 10px 8px 5px #555;
-	border: 2px solid #f8ccd4;
 	background-color: #97ddc8;
-	
 }
 
 .contact{
@@ -559,7 +527,6 @@ figcaption{
 	height: 500px;
 	grid-column: 2/2;
 	grid-row: 4;
-	border: 2px solid #3ca9ed;
 	margin-top: 10px;
 	background-color: #f8ccd4;
 	box-shadow: 10px 8px 5px #555;
@@ -571,10 +538,7 @@ figcaption{
 	height: 500px;
 	grid-column: 3/4;
 	grid-row: 4;
-	/* margin-left: 10px;
-	margin-right: 10px; */
 	margin-top: 10px;
-	border: 2px solid #3ca9ed;
 	box-shadow: 10px 8px 5px #555;
 }
 
